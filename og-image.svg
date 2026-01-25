@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#12121a"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="lockGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.15">
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a3a" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Glow effects -->
+  <ellipse cx="240" cy="-60" rx="480" ry="300" fill="rgba(0, 212, 255, 0.08)"/>
+  <ellipse cx="960" cy="690" rx="360" ry="240" fill="rgba(0, 255, 136, 0.08)"/>
+  
+  <!-- Lock icon -->
+  <g transform="translate(80, 45)">
+    <path d="M50 45H20a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6h30a6 6 0 0 0 6-6V51a6 6 0 0 0-6-6Z" fill="none" stroke="url(#lockGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 45V37a11 11 0 0 1 22 0v8" fill="none" stroke="url(#lockGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Logo text -->
+  <text x="155" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#f0f0f5" letter-spacing="-0.5">Guide Privacy</text>
+  
+  <!-- Main title -->
+  <text x="600" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="110" font-weight="700" fill="#f0f0f5" letter-spacing="-3" text-anchor="middle">Proteggi la tua</text>
+  <text x="600" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="110" font-weight="700" fill="url(#textGrad)" letter-spacing="-3" text-anchor="middle">libertà digitale</text>
+</svg>
