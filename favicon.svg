@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Minimal brutal block lock">
-  <rect width="64" height="64" fill="#000"/>
-  <rect x="16" y="30" width="32" height="24" fill="#fff"/>
-  <path d="M24 30V18a8 8 0 0 1 16 0v12h-6V18a2 2 0 0 0-4 0v12z" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Minimal brutal block lock inverted">
+  <rect width="64" height="64" fill="#fff"/>
+  <rect x="16" y="30" width="32" height="24" fill="#000"/>
+  <path d="M24 30V18a8 8 0 0 1 16 0v12h-6V18a2 2 0 0 0-4 0v12z" fill="#000"/>
 </svg>
