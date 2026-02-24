@@ -1,45 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a0f"/>
-      <stop offset="100%" stop-color="#12121a"/>
-    </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ff88"/>
-      <stop offset="50%" stop-color="#00d4ff"/>
-      <stop offset="100%" stop-color="#a855f7"/>
-    </linearGradient>
-    <linearGradient id="lockGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#00ff88"/>
-      <stop offset="100%" stop-color="#00d4ff"/>
-    </linearGradient>
+    <clipPath id="clip">
+      <rect width="1200" height="630" rx="0"/>
+    </clipPath>
   </defs>
-  
+
   <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
-  
-  <!-- Grid pattern -->
-  <g opacity="0.15">
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a3a" stroke-width="1"/>
-    </pattern>
-    <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="#c53030"/>
+
+  <!-- Subtle border lines (brutalist grid feel) -->
+  <line x1="80" y1="0" x2="80" y2="630" stroke="#2a2a28" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1200" y2="480" stroke="#2a2a28" stroke-width="1"/>
+
+  <!-- Lock icon (top-left, matching favicon style) -->
+  <g transform="translate(100, 60)">
+    <rect x="0" y="18" width="36" height="28" rx="4" fill="none" stroke="#ededec" stroke-width="3"/>
+    <path d="M6 18V12a12 12 0 0 1 24 0v6" fill="none" stroke="#ededec" stroke-width="3"/>
+    <circle cx="18" cy="34" r="3" fill="#c53030"/>
   </g>
-  
-  <!-- Glow effects -->
-  <ellipse cx="240" cy="-60" rx="480" ry="300" fill="rgba(0, 212, 255, 0.08)"/>
-  <ellipse cx="960" cy="690" rx="360" ry="240" fill="rgba(0, 255, 136, 0.08)"/>
-  
-  <!-- Lock icon -->
-  <g transform="translate(80, 45)">
-    <path d="M50 45H20a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6h30a6 6 0 0 0 6-6V51a6 6 0 0 0-6-6Z" fill="none" stroke="url(#lockGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M24 45V37a11 11 0 0 1 22 0v8" fill="none" stroke="url(#lockGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  
-  <!-- Logo text -->
-  <text x="155" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#f0f0f5" letter-spacing="-0.5">Guide Privacy</text>
-  
-  <!-- Main title -->
-  <text x="600" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="110" font-weight="700" fill="#f0f0f5" letter-spacing="-3" text-anchor="middle">Proteggi la tua</text>
-  <text x="600" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="110" font-weight="700" fill="url(#textGrad)" letter-spacing="-3" text-anchor="middle">libertà digitale</text>
+
+  <!-- Brand name -->
+  <text x="155" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#9c9a93" letter-spacing="0.12em" text-transform="uppercase">GUIDE PRIVACY</text>
+
+  <!-- Main headline -->
+  <text x="100" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="96" font-weight="700" fill="#ededec" letter-spacing="-2" text-transform="uppercase">I TUOI DATI</text>
+  <text x="100" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="96" font-weight="700" letter-spacing="-2" text-transform="uppercase">
+    <tspan fill="#ededec">SONO </tspan>
+    <tspan fill="#0a0a0a" style="background:#ededec">ESPOSTI</tspan>
+  </text>
+
+  <!-- Highlighted word with inverted box -->
+  <rect x="384" y="280" width="440" height="96" rx="4" fill="#ededec"/>
+  <text x="396" y="362" font-family="system-ui, -apple-system, sans-serif" font-size="96" font-weight="700" fill="#0a0a0a" letter-spacing="-2" text-transform="uppercase">ESPOSTI</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#9c9a93" letter-spacing="0">Privacy digitale &amp; Bitcoin. Proteggi la tua libertà digitale.</text>
+
+  <!-- Bottom bar with meta info -->
+  <text x="100" y="540" font-family="ui-monospace, monospace" font-size="13" fill="#6e6d68" letter-spacing="0.1em" text-transform="uppercase">guida.priorato.org</text>
+
+  <!-- Red dot -->
+  <circle cx="310" cy="536" r="4" fill="#c53030"/>
+
+  <text x="330" y="540" font-family="ui-monospace, monospace" font-size="13" fill="#6e6d68" letter-spacing="0.1em" text-transform="uppercase">@turtlecute33</text>
+
+  <!-- Decorative red accent block (bottom-right) -->
+  <rect x="1120" y="480" width="80" height="150" fill="#c53030"/>
 </svg>
