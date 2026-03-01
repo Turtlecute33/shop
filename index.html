@@ -62,11 +62,6 @@
             "@type": "Person",
             "name": "turtlecute33",
             "url": "https://x.com/turtlecute33"
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://shop.priorato.org/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
         }
     }
     </script>
@@ -81,6 +76,108 @@
             "https://x.com/turtlecute33",
             "https://t.me/Turtlecute33",
             "https://instagram.com/turtlecute33"
+        ]
+    }
+    </script>
+    <!-- Fix 6: Product Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Guida Privacy Digitale",
+        "description": "Manuale pratico per proteggere dati, identità e comunicazioni online. VPN, email cifrate, browser sicuri, Tor, GrapheneOS e molto altro.",
+        "brand": {"@type": "Brand", "name": "Guide Privacy"},
+        "author": {"@type": "Person", "name": "turtlecute33"},
+        "offers": {
+            "@type": "Offer",
+            "price": "30.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://btcpay.priorato.org/apps/3tqRxVpFweqduYGRtyEZ1XSzfrg6/pos"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Guida Privacy Bitcoin",
+        "description": "Manuale pratico per utilizzare Bitcoin in modo privato. UTXO, chain analysis, Lightning, CoinJoin, Wasabi, acquisto no-KYC.",
+        "brand": {"@type": "Brand", "name": "Guide Privacy"},
+        "author": {"@type": "Person", "name": "turtlecute33"},
+        "offers": {
+            "@type": "Offer",
+            "price": "30.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://btcpay.priorato.org/apps/2VnsrDTR22bi9Zw79svY8m4Jq8as/pos"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Bundle Completo — Privacy Digitale + Bitcoin",
+        "description": "Entrambe le guide insieme a prezzo ridotto. Protezione completa per identità digitale e finanze.",
+        "brand": {"@type": "Brand", "name": "Guide Privacy"},
+        "author": {"@type": "Person", "name": "turtlecute33"},
+        "offers": {
+            "@type": "Offer",
+            "price": "50.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://btcpay.priorato.org/apps/29xiW9q5ypTbV7CQuWKmyahZNLX6/pos"
+        }
+    }
+    </script>
+
+    <!-- Fix 5+6: FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Cosa contengono le guide?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La Guida Privacy Digitale copre VPN, email cifrate, browser sicuri, sistemi operativi alternativi (Linux, GrapheneOS), Tor, DNS, password manager, SIM anonime e molto altro. La Guida Privacy Bitcoin copre UTXO, chain analysis, hardware wallet, Sparrow, Lightning Network, CoinJoin, Wasabi, Whirlpool e acquisto no-KYC."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come ricevo la guida dopo l'acquisto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ricevi automaticamente un'email con accesso alla versione Web e il download PDF."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Posso pagare in Bitcoin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sì. Il pagamento avviene tramite BTCPay Server, un processore open source e self-hosted. Accettiamo Bitcoin on-chain e Lightning."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Che differenza c'è dalle guide gratuite online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Queste guide sono manuali completi, strutturati e aggiornati, non raccolte di articoli sparsi. Ogni strumento è spiegato passo dopo passo, testato personalmente, e organizzato in un percorso progressivo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Le guide vengono aggiornate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sì. Quando cambiano strumenti, software o normative, le guide vengono aggiornate. Chi ha acquistato riceve accesso agli aggiornamenti."
+                }
+            }
         ]
     }
     </script>
@@ -165,6 +262,29 @@
         }
         .hero h1{animation-delay:.05s}
         .hero-p{animation-delay:.18s}
+        .hero-cta{animation-delay:.3s}
+
+        /* Fix 3: Hero CTA */
+        .hero-cta{
+            display:inline-flex;align-items:center;gap:10px;
+            margin-top:36px;
+            padding:14px 32px;
+            border:1px solid var(--border);
+            border-radius:var(--r-sm);
+            color:var(--fg);
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.82rem;font-weight:500;
+            text-decoration:none;
+            transition:border-color .3s var(--ease),background .3s var(--ease),transform .3s var(--ease);
+            animation:enter .6s var(--ease) both;
+        }
+        .hero-cta:hover{
+            border-color:#484846;
+            background:rgba(255,255,255,.04);
+            transform:translateY(-2px);
+        }
+        .hero-cta svg{transition:transform .3s var(--ease)}
+        .hero-cta:hover svg{transform:translateY(3px)}
 
         @keyframes enter{
             from{opacity:0;transform:translateY(22px)}
@@ -197,7 +317,8 @@
             margin-bottom:18px;
             display:block;
         }
-        .threat-pill h4{
+        .threat-pill h4,
+        .threat-pill .threat-title{
             font-family:var(--brutal);
             font-size:1rem;
             font-weight:400;
@@ -304,6 +425,23 @@
             margin-top:1px;
         }
 
+        /* Fix 1+2: Prices on cards */
+        .card-price{
+            display:block;
+            font-family:'Space Grotesk',system-ui,sans-serif;
+            font-size:1.4rem;
+            font-weight:700;
+            color:var(--fg);
+            margin-bottom:20px;
+        }
+        .card-price .price-old{
+            color:var(--muted2);
+            font-size:1rem;
+            font-weight:400;
+            text-decoration:line-through;
+            margin-right:6px;
+        }
+
         .card .go{
             display:inline-flex;align-items:center;gap:8px;
             font-family:'JetBrains Mono',ui-monospace,monospace;
@@ -333,7 +471,8 @@
         }
         .proof-head{margin-bottom:44px}
         .proof-head.compact{margin-bottom:20px}
-        .proof-head h3{
+        .proof-head h3,
+        .proof-head .section-title{
             font-family:'Space Grotesk',system-ui,sans-serif;
             font-size:1.2rem;font-weight:700;
             text-transform:uppercase;
@@ -433,6 +572,46 @@
         }
         .ab-tags span:hover{border-color:#555;color:var(--fg)}
 
+        /* ═══ FAQ — Fix 5 ═══ */
+        .faq{padding:69px 0 0}
+        .faq-list{display:flex;flex-direction:column;gap:1px}
+        .faq-item{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:var(--r);
+            margin-bottom:8px;
+            transition:border-color .3s var(--ease);
+        }
+        .faq-item:hover{border-color:#484846}
+        .faq-item summary{
+            padding:22px 28px;
+            font-size:.95rem;
+            font-weight:600;
+            cursor:pointer;
+            list-style:none;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .faq-item summary::-webkit-details-marker{display:none}
+        .faq-item summary::after{
+            content:'+';
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:1.1rem;
+            color:var(--muted2);
+            transition:transform .3s var(--ease);
+        }
+        .faq-item[open] summary::after{
+            content:'−';
+        }
+        .faq-item p{
+            padding:0 28px 20px;
+            font-size:.9rem;
+            color:var(--muted);
+            line-height:1.75;
+        }
+        .faq-item p:first-of-type{padding-top:0}
+
         /* ═══ CTA ═══ */
         .cta{padding:69px 0 24px}
         .cta-box{
@@ -442,7 +621,8 @@
             background:var(--card);
             padding:80px 40px;
         }
-        .cta-box h3{
+        .cta-box h3,
+        .cta-box h2{
             font-family:var(--brutal);
             font-size:1.6rem;font-weight:400;
             text-transform:uppercase;
@@ -567,21 +747,23 @@
     <section class="hero">
         <h1>I tuoi dati sono <span class="hl">gia' esposti</span></h1>
         <p class="hero-p">Ogni giorno le tue comunicazioni, la tua posizione e le tue transazioni vengono raccolte e vendute. Puoi cambiare le cose.</p>
+        <!-- Fix 3: Hero CTA -->
+        <a href="#soluzioni" class="hero-cta">Scopri le soluzioni <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7l7 7 7-7"/></svg></a>
     </section>
 
-    <!-- THREATS -->
+    <!-- THREATS — Fix 4: h4→h3 for proper hierarchy -->
     <section class="threats sr">
         <div class="threat-strip">
             <div class="threat-pill">
-                <h4>Identità tracciata</h4>
+                <h3 class="threat-title">Identità tracciata</h3>
                 <p>La tua SIM è collegata al tuo nome, indirizzo e codice fiscale. Ogni chiamata, ogni SMS: tutto registrato.</p>
             </div>
             <div class="threat-pill">
-                <h4>Transazioni esposte</h4>
+                <h3 class="threat-title">Transazioni esposte</h3>
                 <p>Ogni pagamento crea una traccia permanente. La tua banca sa cosa compri, quando e dove. Anche i Bitcoin KYC sono tracciati.</p>
             </div>
             <div class="threat-pill">
-                <h4>Comunicazioni lette</h4>
+                <h3 class="threat-title">Comunicazioni lette</h3>
                 <p>Email, messaggi, ricerche: i provider leggono tutto per profilarti. Senza cifratura, sono pubbliche.</p>
             </div>
         </div>
@@ -589,8 +771,8 @@
 
     <!-- PRODUCTS -->
     <section class="products">
-        <div class="proof-head compact sr"><h3>Le soluzioni</h3></div>
-        <div class="grid sr-stagger" id="pg">
+        <div class="proof-head compact sr"><h2 class="section-title">Le soluzioni</h2></div>
+        <div class="grid sr-stagger" id="soluzioni">
             <!-- Guida Privacy -->
             <a data-umami-event="Guida Privacy" href="https://btcpay.priorato.org/apps/3tqRxVpFweqduYGRtyEZ1XSzfrg6/pos" class="card">
                 <span class="pill">Inizia da qui</span>
@@ -599,6 +781,7 @@
                 </div>
                 <h3>Guida Privacy Digitale</h3>
                 <p class="desc">Proteggi i tuoi dati, la tua identità e le tue comunicazioni online con strategie testate e immediatamente applicabili.</p>
+                <span class="card-price">€30</span>
                 <span class="go">Ottieni la guida <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
             </a>
 
@@ -609,6 +792,7 @@
                 </div>
                 <h3>Guida Privacy Bitcoin</h3>
                 <p class="desc">Impara a utilizzare Bitcoin in modo privato e sicuro, senza compromessi sulla tua libertà finanziaria.</p>
+                <span class="card-price">€30</span>
                 <span class="go">Ottieni la guida <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
             </a>
 
@@ -620,6 +804,7 @@
                 </div>
                 <h3>Bundle Completo</h3>
                 <p class="desc">Entrambe le guide insieme a prezzo ridotto. Il pacchetto completo per proteggere identità e finanze in un colpo solo.</p>
+                <span class="card-price"><s class="price-old">€60</s> €50</span>
                 <span class="go">Ottieni il bundle <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
             </a>
 
@@ -632,6 +817,7 @@
                     </div>
                     <h3>SIM no KYC</h3>
                     <p class="desc">Numeri di telefono senza KYC per proteggere la tua identità. Nessuna verifica, nessun documento, nessuna traccia.</p>
+                    <span class="card-price">da €12</span>
                     <div class="urgency-note">
                         <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
                         Le normative UE si stanno stringendo. Questa finestra non resterà aperta per sempre.
@@ -646,6 +832,7 @@
                     </div>
                     <h3>Privacy Phone</h3>
                     <p class="desc">Telefoni con GrapheneOS pre-installato e configurazione personalizzata per le tue esigenze. Pronto all'uso.</p>
+                    <span class="card-price">da €650</span>
                     <span class="go">Configura il tuo <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
                 </a>
             </div>
@@ -655,7 +842,7 @@
     <!-- TESTIMONIALS -->
     <section class="proof">
         <div class="proof-head sr">
-            <h3>Cosa dicono i nostri clienti</h3>
+            <h2 class="section-title">Cosa dicono i nostri clienti</h2>
             <p>...se solo potessimo saperlo.</p>
         </div>
         <div class="quotes sr-stagger" id="qs">
@@ -685,7 +872,7 @@
 
     <!-- AUTHOR -->
     <section class="about">
-        <div class="proof-head compact sr"><h3>Chi c'è dietro</h3></div>
+        <div class="proof-head compact sr"><h2 class="section-title">Chi c'è dietro</h2></div>
         <div class="about-card sr">
             <div class="ab-avatar">t</div>
             <div class="ab-body">
@@ -701,13 +888,41 @@
         </div>
     </section>
 
+    <!-- FAQ — Fix 5 -->
+    <section class="faq">
+        <div class="proof-head compact sr"><h2 class="section-title">Domande frequenti</h2></div>
+        <div class="faq-list sr">
+            <details class="faq-item">
+                <summary>Cosa contengono le guide?</summary>
+                <p>La <strong>Guida Privacy Digitale</strong> copre VPN, email cifrate, browser sicuri, sistemi operativi alternativi (Linux, GrapheneOS), Tor, DNS, password manager, SIM anonime e molto altro. Ogni sezione ha un indicatore di difficoltà (⭐ facile → ⭐⭐⭐ difficile).</p>
+                <p>La <strong>Guida Privacy Bitcoin</strong> copre il funzionamento di UTXO e transazioni, chain analysis, hardware wallet, Sparrow, Lightning Network, CoinJoin, Wasabi, Whirlpool e acquisto no-KYC.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Come ricevo la guida dopo l'acquisto?</summary>
+                <p>Ricevi automaticamente un'email con accesso alla versione Web e il download PDF. Controlla la cartella spam se non la trovi entro pochi minuti.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Posso pagare in Bitcoin?</summary>
+                <p>Sì. Il pagamento avviene tramite BTCPay Server, un processore open source e self-hosted. Accettiamo Bitcoin on-chain e Lightning.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Che differenza c'è dalle guide gratuite online?</summary>
+                <p>Queste guide sono manuali completi, strutturati e aggiornati, non raccolte di articoli sparsi. Ogni strumento è spiegato passo dopo passo, testato personalmente, e organizzato in un percorso progressivo dalla base all'avanzato.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Le guide vengono aggiornate?</summary>
+                <p>Sì. Quando cambiano strumenti, software o normative, le guide vengono aggiornate. Chi ha acquistato riceve accesso agli aggiornamenti.</p>
+            </details>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta">
         <div class="cta-box sr">
-            <h3>Ogni giorno che passa, perdi privacy</h3>
+            <h2 class="section-title">Ogni giorno che passa, perdi privacy</h2>
             <p>I tuoi dati vengono raccolti in questo momento. Non domani, non la prossima settimana. Adesso. La buona notizia? Puoi iniziare a proteggerti oggi stesso.</p>
-            <a href="https://btcpay.priorato.org/apps/3tqRxVpFweqduYGRtyEZ1XSzfrg6/pos" class="cta-btn" data-umami-event="CTA Finale">
-                Inizia a proteggerti
+            <a href="#soluzioni" class="cta-btn" data-umami-event="CTA Finale">
+                Scegli la tua guida
                 <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
         </div>
