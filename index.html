@@ -182,19 +182,15 @@
     }
     </script>
 
-    <script>
-        (function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)})();
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@700&family=Playfair+Display:wght@800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-        html{scroll-behavior:smooth;transition:background .3s ease,color .3s ease}
+        html{scroll-behavior:smooth}
 
-        :root,
-        [data-theme="dark"]{
+        :root{
             --bg:#0a0a0a;
             --fg:#ededec;
             --border:#2a2a28;
@@ -207,51 +203,6 @@
             --ease:cubic-bezier(.25,.46,.45,.94);
             --brutal:'Archivo Black',system-ui,sans-serif;
             --display:'Playfair Display',Georgia,serif;
-            --card-hover-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.04);
-            --quote-hover-shadow:0 6px 18px rgba(0,0,0,.3);
-            --hover-border:#484846;
-            --hover-bg:rgba(255,255,255,.015);
-            --cta-btn-shadow:0 6px 20px rgba(237,237,236,.12);
-            --social-hover-bg:rgba(255,255,255,.05);
-            --top-bar:var(--accent);
-        }
-
-        [data-theme="light"]{
-            --bg:#fafafa;
-            --fg:#1a1a19;
-            --border:#e0e0dd;
-            --accent:#c53030;
-            --muted:#6e6d68;
-            --muted2:#9c9a93;
-            --card:#ffffff;
-            --r:10px;
-            --r-sm:6px;
-            --card-hover-shadow:0 8px 24px rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.06);
-            --quote-hover-shadow:0 6px 18px rgba(0,0,0,.06);
-            --hover-border:#c0c0be;
-            --hover-bg:rgba(0,0,0,.02);
-            --cta-btn-shadow:0 6px 20px rgba(26,26,25,.15);
-            --social-hover-bg:rgba(0,0,0,.05);
-            --top-bar:var(--accent);
-        }
-
-        [data-theme="braiins"]{
-            --bg:#0D0D0D;
-            --fg:#EFEFEF;
-            --border:#262626;
-            --accent:#6B50FF;
-            --muted:#8D8D8D;
-            --muted2:#6F6F7E;
-            --card:#161616;
-            --r:0px;
-            --r-sm:0px;
-            --card-hover-shadow:0 8px 24px rgba(107,80,255,.12),0 0 0 1px rgba(107,80,255,.15);
-            --quote-hover-shadow:0 6px 18px rgba(107,80,255,.1);
-            --hover-border:#393939;
-            --hover-bg:rgba(107,80,255,.04);
-            --cta-btn-shadow:0 6px 20px rgba(107,80,255,.25);
-            --social-hover-bg:rgba(107,80,255,.1);
-            --top-bar:#6B50FF;
         }
 
         body{
@@ -268,7 +219,7 @@
         body::before{
             content:'';display:block;
             height:3px;
-            background:var(--top-bar, var(--accent));
+            background:var(--accent);
         }
 
         /* ═══ LAYOUT ═══ */
@@ -328,8 +279,8 @@
             animation:enter .6s var(--ease) both;
         }
         .hero-cta:hover{
-            border-color:var(--hover-border);
-            background:var(--hover-bg);
+            border-color:#484846;
+            background:rgba(255,255,255,.04);
             transform:translateY(-2px);
         }
         .hero-cta svg{transition:transform .3s var(--ease)}
@@ -354,7 +305,7 @@
             transition:background .25s var(--ease);
         }
         .threat-pill:last-child{border-right:none}
-        .threat-pill:hover{background:var(--hover-bg)}
+        .threat-pill:hover{background:rgba(255,255,255,.015)}
 
         .tp-label{
             font-family:'JetBrains Mono',ui-monospace,monospace;
@@ -415,8 +366,8 @@
             transition:border-color .3s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease);
         }
         .card:hover{
-            border-color:var(--hover-border);
-            box-shadow:var(--card-hover-shadow);
+            border-color:#484846;
+            box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.04);
             transform:translateY(-4px);
         }
 
@@ -441,7 +392,7 @@
             margin-bottom:24px;
             transition:border-color .3s var(--ease);
         }
-        .card:hover .card-ico{border-color:var(--hover-border)}
+        .card:hover .card-ico{border-color:#484846}
         .card-ico svg{
             width:22px;height:22px;
             stroke:var(--fg);stroke-width:1.5;
@@ -545,8 +496,8 @@
             transition:border-color .3s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease);
         }
         .quote:hover{
-            border-color:var(--hover-border);
-            box-shadow:var(--quote-hover-shadow);
+            border-color:#484846;
+            box-shadow:0 6px 18px rgba(0,0,0,.3);
             transform:translateY(-3px);
         }
 
@@ -558,7 +509,7 @@
             border-left:2px solid var(--border);
             transition:border-color .3s var(--ease);
         }
-        .quote:hover blockquote{border-left-color:var(--hover-border)}
+        .quote:hover blockquote{border-left-color:#555}
         .q-who{display:flex;align-items:center;gap:12px}
         .q-av{
             width:38px;height:38px;
@@ -590,7 +541,7 @@
             padding:40px;
             transition:border-color .3s var(--ease);
         }
-        .about-card:hover{border-color:var(--hover-border)}
+        .about-card:hover{border-color:#484846}
         .ab-avatar{
             width:72px;height:72px;flex-shrink:0;
             background:var(--fg);color:var(--bg);
@@ -619,7 +570,7 @@
             color:var(--muted2);
             transition:border-color .25s var(--ease),color .25s var(--ease);
         }
-        .ab-tags span:hover{border-color:var(--hover-border);color:var(--fg)}
+        .ab-tags span:hover{border-color:#555;color:var(--fg)}
 
         /* ═══ FAQ — Fix 5 ═══ */
         .faq{padding:69px 0 0}
@@ -631,7 +582,7 @@
             margin-bottom:8px;
             transition:border-color .3s var(--ease);
         }
-        .faq-item:hover{border-color:var(--hover-border)}
+        .faq-item:hover{border-color:#484846}
         .faq-item summary{
             padding:22px 28px;
             font-size:.95rem;
@@ -695,7 +646,7 @@
         }
         .cta-btn:hover{
             transform:translateY(-2px);
-            box-shadow:var(--cta-btn-shadow);
+            box-shadow:0 6px 20px rgba(237,237,236,.12);
         }
         .cta-btn:active{transform:translateY(0);box-shadow:none}
         .cta-btn svg{
@@ -741,7 +692,7 @@
             color:var(--muted2);text-decoration:none;
             transition:color .25s var(--ease),background .25s var(--ease);
         }
-        .foot-socials a:hover{color:var(--fg);background:var(--social-hover-bg)}
+        .foot-socials a:hover{color:var(--fg);background:rgba(255,255,255,.05)}
         .foot-socials svg{width:16px;height:16px}
 
         /* ═══ SCROLL REVEAL ═══ */
@@ -763,81 +714,8 @@
         .sr-stagger.v>*:nth-child(4){opacity:1;transform:none;transition-delay:.22s}
         .sr-stagger.v>*:nth-child(5){opacity:1;transform:none;transition-delay:.28s}
 
-        /* ═══ BRAIINS THEME OVERRIDES ═══ */
-        [data-theme="braiins"] .hero h1 .hl{
-            background:#6B50FF;
-            color:#fff;
-            border-radius:0;
-        }
-        [data-theme="braiins"] .card .urgency-note{
-            color:#8B7CFF;
-            border-color:rgba(107,80,255,.3);
-        }
-        [data-theme="braiins"] .urgency-note svg{stroke:#8B7CFF}
-        [data-theme="braiins"] .cta-btn{
-            background:#6B50FF;color:#fff;
-            border-color:#6B50FF;
-        }
-        [data-theme="braiins"] .cta-btn:hover{
-            background:#8B7CFF;border-color:#8B7CFF;
-        }
-        [data-theme="braiins"] .foot-dot{background:#6B50FF}
-        [data-theme="braiins"] .ab-avatar{
-            background:#6B50FF;color:#fff;
-        }
-        [data-theme="braiins"] .cta-box{border-radius:0}
-
-        /* ═══ LIGHT THEME OVERRIDES ═══ */
-        [data-theme="light"] .hero h1 .hl{
-            background:#1a1a19;
-            color:#fafafa;
-        }
-        [data-theme="light"] .cta-btn{
-            background:#1a1a19;color:#fafafa;
-            border-color:#1a1a19;
-        }
-        [data-theme="light"] .ab-avatar{
-            background:#1a1a19;color:#fafafa;
-        }
-
-        /* ═══ THEME SWITCHER ═══ */
-        .theme-switcher{
-            position:fixed;
-            top:16px;right:16px;
-            z-index:1000;
-            display:flex;gap:2px;
-            background:var(--card);
-            border:1px solid var(--border);
-            border-radius:var(--r-sm);
-            padding:3px;
-            backdrop-filter:blur(12px);
-            -webkit-backdrop-filter:blur(12px);
-        }
-        .theme-btn{
-            width:32px;height:32px;
-            border:1px solid transparent;
-            border-radius:calc(var(--r-sm) - 1px);
-            background:transparent;
-            cursor:pointer;
-            display:flex;align-items:center;justify-content:center;
-            transition:all .2s var(--ease);
-            color:var(--muted2);
-            padding:0;
-        }
-        .theme-btn:hover{
-            color:var(--fg);
-            background:var(--hover-bg);
-        }
-        .theme-btn.active{
-            color:var(--fg);
-            background:var(--bg);
-            border-color:var(--border);
-        }
-        .theme-btn svg{width:16px;height:16px}
-
         /* ═══ RESPONSIVE ═══ */
         @media(max-width:768px){
-            .theme-switcher{top:10px;right:10px}
             .w{padding:0 24px}
             .hero{padding:110px 0 72px}
             .hero h1{font-size:clamp(2.2rem,9vw,3.2rem)}
@@ -862,19 +740,6 @@
     </style>
 </head>
 <body>
-
-<!-- THEME SWITCHER -->
-<div class="theme-switcher">
-    <button class="theme-btn active" data-theme="dark" title="Dark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-    </button>
-    <button class="theme-btn" data-theme="light" title="Light">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-    </button>
-    <button class="theme-btn" data-theme="braiins" title="Braiins">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-    </button>
-</div>
 
 <div class="w">
 
@@ -1086,22 +951,6 @@ const io=new IntersectionObserver(e=>{
     e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})
 },{threshold:.12});
 document.querySelectorAll('.sr,.sr-stagger').forEach(el=>io.observe(el));
-
-// Theme switcher
-(function(){
-    const saved=localStorage.getItem('theme')||'dark';
-    document.documentElement.setAttribute('data-theme',saved);
-    const btns=document.querySelectorAll('.theme-btn');
-    btns.forEach(b=>{
-        b.classList.toggle('active',b.dataset.theme===saved);
-        b.addEventListener('click',()=>{
-            const t=b.dataset.theme;
-            document.documentElement.setAttribute('data-theme',t);
-            localStorage.setItem('theme',t);
-            btns.forEach(x=>x.classList.toggle('active',x.dataset.theme===t));
-        });
-    });
-})();
 </script>
 
 </body>
