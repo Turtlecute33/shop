@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Security: defense in depth -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://umami.priorato.org; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://umami.priorato.org; form-action 'none'; base-uri 'self'; upgrade-insecure-requests">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <!-- Primary Meta Tags -->
     <title>Guide Privacy | Privacy Digitale & Bitcoin</title>
     <meta name="title" content="Guide Privacy | Privacy Digitale & Bitcoin">
     <meta name="description" content="Guide complete sulla privacy informatica e Bitcoin. Proteggi la tua libertà digitale con manuali pratici, SIM anonime e telefoni con GrapheneOS.">
     <meta name="keywords" content="privacy digitale, guida privacy, bitcoin privacy, grapheneos, sim anonima, no kyc, protezione dati, sicurezza informatica, libertà digitale, anonimato online">
     <meta name="author" content="turtlecute33">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="Italian">
     <meta name="revisit-after" content="7 days">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://shop.priorato.org">
+    <link rel="canonical" href="https://shop.priorato.org/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -23,7 +28,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shop.priorato.org">
+    <meta property="og:url" content="https://shop.priorato.org/">
     <meta property="og:site_name" content="Guide Privacy">
     <meta property="og:title" content="Guide Privacy | Privacy Digitale & Bitcoin">
     <meta property="og:description" content="Guide complete sulla privacy informatica e Bitcoin. Proteggi la tua libertà digitale con manuali pratici, SIM anonime e telefoni con GrapheneOS.">
@@ -35,7 +40,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://shop.priorato.org">
+    <meta name="twitter:url" content="https://shop.priorato.org/">
     <meta name="twitter:title" content="Guide Privacy | Privacy Digitale & Bitcoin">
     <meta name="twitter:description" content="Guide complete sulla privacy informatica e Bitcoin. Proteggi la tua libertà digitale con manuali pratici, SIM anonime e telefoni con GrapheneOS.">
     <meta name="twitter:image" content="https://shop.priorato.org/og-image.png">
@@ -56,8 +61,10 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Guide Privacy",
-        "url": "https://shop.priorato.org",
+        "url": "https://shop.priorato.org/",
         "description": "Guide complete sulla privacy informatica e Bitcoin. Proteggi la tua libertà digitale.",
+        "inLanguage": "it",
+        "dateModified": "2026-05-08",
         "author": {
             "@type": "Person",
             "name": "turtlecute33",
@@ -68,10 +75,12 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "OnlineStore",
         "name": "Guide Privacy",
-        "url": "https://shop.priorato.org",
+        "url": "https://shop.priorato.org/",
         "logo": "https://shop.priorato.org/favicon.svg",
+        "currenciesAccepted": "EUR, BTC",
+        "paymentAccepted": "Bitcoin, Lightning Network",
         "sameAs": [
             "https://x.com/turtlecute33",
             "https://t.me/Turtlecute33",
@@ -84,16 +93,22 @@
     {
         "@context": "https://schema.org",
         "@type": "Product",
+        "@id": "https://shop.priorato.org/#guida-privacy-digitale",
         "name": "Guida Privacy Digitale",
         "description": "Manuale pratico per proteggere dati, identità e comunicazioni online. VPN, email cifrate, browser sicuri, Tor, GrapheneOS e molto altro.",
+        "category": "Guide / Privacy informatica",
+        "inLanguage": "it",
         "brand": {"@type": "Brand", "name": "Guide Privacy"},
-        "author": {"@type": "Person", "name": "turtlecute33"},
+        "author": {"@type": "Person", "name": "turtlecute33", "url": "https://x.com/turtlecute33"},
         "offers": {
             "@type": "Offer",
             "price": "30.00",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
-            "url": "https://btcpay.priorato.org/apps/3tqRxVpFweqduYGRtyEZ1XSzfrg6/pos"
+            "itemCondition": "https://schema.org/NewCondition",
+            "priceValidUntil": "2026-12-31",
+            "url": "https://btcpay.priorato.org/apps/3tqRxVpFweqduYGRtyEZ1XSzfrg6/pos",
+            "seller": {"@type": "Organization", "name": "Guide Privacy", "url": "https://shop.priorato.org/"}
         }
     }
     </script>
@@ -101,16 +116,22 @@
     {
         "@context": "https://schema.org",
         "@type": "Product",
+        "@id": "https://shop.priorato.org/#guida-privacy-bitcoin",
         "name": "Guida Privacy Bitcoin",
         "description": "Manuale pratico per utilizzare Bitcoin in modo privato. UTXO, chain analysis, Lightning, CoinJoin, Wasabi, acquisto no-KYC.",
+        "category": "Guide / Bitcoin privacy",
+        "inLanguage": "it",
         "brand": {"@type": "Brand", "name": "Guide Privacy"},
-        "author": {"@type": "Person", "name": "turtlecute33"},
+        "author": {"@type": "Person", "name": "turtlecute33", "url": "https://x.com/turtlecute33"},
         "offers": {
             "@type": "Offer",
             "price": "30.00",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
-            "url": "https://btcpay.priorato.org/apps/2VnsrDTR22bi9Zw79svY8m4Jq8as/pos"
+            "itemCondition": "https://schema.org/NewCondition",
+            "priceValidUntil": "2026-12-31",
+            "url": "https://btcpay.priorato.org/apps/2VnsrDTR22bi9Zw79svY8m4Jq8as/pos",
+            "seller": {"@type": "Organization", "name": "Guide Privacy", "url": "https://shop.priorato.org/"}
         }
     }
     </script>
@@ -118,16 +139,26 @@
     {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "Bundle Completo — Privacy Digitale + Bitcoin",
+        "@id": "https://shop.priorato.org/#bundle-completo",
+        "name": "Bundle Completo: Privacy Digitale + Bitcoin",
         "description": "Entrambe le guide insieme a prezzo ridotto. Protezione completa per identità digitale e finanze.",
+        "category": "Guide / Bundle",
+        "inLanguage": "it",
+        "isRelatedTo": [
+            {"@id": "https://shop.priorato.org/#guida-privacy-digitale"},
+            {"@id": "https://shop.priorato.org/#guida-privacy-bitcoin"}
+        ],
         "brand": {"@type": "Brand", "name": "Guide Privacy"},
-        "author": {"@type": "Person", "name": "turtlecute33"},
+        "author": {"@type": "Person", "name": "turtlecute33", "url": "https://x.com/turtlecute33"},
         "offers": {
             "@type": "Offer",
             "price": "50.00",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
-            "url": "https://btcpay.priorato.org/apps/29xiW9q5ypTbV7CQuWKmyahZNLX6/pos"
+            "itemCondition": "https://schema.org/NewCondition",
+            "priceValidUntil": "2026-12-31",
+            "url": "https://btcpay.priorato.org/apps/29xiW9q5ypTbV7CQuWKmyahZNLX6/pos",
+            "seller": {"@type": "Organization", "name": "Guide Privacy", "url": "https://shop.priorato.org/"}
         }
     }
     </script>
@@ -177,18 +208,235 @@
                     "@type": "Answer",
                     "text": "Sì. Quando cambiano strumenti, software o normative, le guide vengono aggiornate. Chi ha acquistato riceve accesso agli aggiornamenti."
                 }
+            },
+            {
+                "@type": "Question",
+                "name": "Le SIM no-KYC sono legali in Italia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'acquisto e l'uso di una SIM no-KYC straniera è legale in Italia. La normativa italiana impone l'identificazione a chi vende SIM nazionali, ma non vieta di utilizzare numeri esteri o servizi di privacy. Verifica sempre la giurisdizione di emissione e i suoi obblighi di conservazione dati prima di sceglierla."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si compra Bitcoin senza KYC in Italia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le opzioni principali sono: piattaforme peer-to-peer come Bisq, HodlHodl e Robosats, dove gli utenti scambiano direttamente; alcuni ATM Bitcoin sotto soglie ridotte; mining; pagamento per beni e servizi. La Guida Privacy Bitcoin spiega ogni metodo con vantaggi, rischi, setup pratico e implicazioni fiscali."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "GrapheneOS è legale in Italia e vale la pena installarlo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sì, GrapheneOS è perfettamente legale e si installa solo su Google Pixel ufficiali. Vale la pena se cerchi un sistema mobile con privacy e sicurezza superiori ad Android stock e iOS, mantenendo compatibilità con la maggior parte delle app (incluse Play Store in sandbox e app bancarie)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quale VPN conviene scegliere in Italia nel 2026?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le VPN più rispettose della privacy oggi sono Mullvad, IVPN e Obscura VPN. Criteri chiave: policy no-log auditata da terze parti, pagamento anonimo (Bitcoin o contanti), niente email obbligatoria all'iscrizione, giurisdizione trasparente. Una VPN non rende anonimi: protegge dal provider locale, ma il provider VPN vede comunque il traffico."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "A chi serve una guida sulla privacy digitale?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Serve a chiunque voglia ridurre la propria esposizione a tracciamento commerciale, profilazione, data broker, stalking o sorveglianza. È particolarmente utile a giornalisti, attivisti, professionisti che gestiscono dati sensibili (avvocati, medici, commercialisti), imprenditori e chiunque consideri la privacy un diritto fondamentale e voglia esercitarlo concretamente."
+                }
             }
         ]
     }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@700&family=Playfair+Display:wght@800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- ItemList: catalogo prodotti -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Catalogo Guide Privacy",
+        "description": "Guide, SIM no-KYC e telefoni con GrapheneOS per la privacy digitale.",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 5,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {"@id": "https://shop.priorato.org/#guida-privacy-digitale"}
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {"@id": "https://shop.priorato.org/#guida-privacy-bitcoin"}
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {"@id": "https://shop.priorato.org/#bundle-completo"}
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Product",
+                    "name": "SIM no-KYC",
+                    "description": "Numeri di telefono senza verifica identità.",
+                    "category": "Telefonia / Privacy",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "15.00",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://dona.priorato.org"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "Product",
+                    "name": "Privacy Phone (GrapheneOS)",
+                    "description": "Pixel con GrapheneOS pre-installato e configurato.",
+                    "category": "Hardware / Privacy",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "650.00",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://t.me/privacyphoneitalia/13"
+                    }
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Person schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://shop.priorato.org/#turtlecute33",
+        "name": "turtlecute33",
+        "alternateName": "@turtlecute33",
+        "description": "Privacy advocate e bitcoiner italiano. Autore di guide pratiche su privacy digitale, Bitcoin no-KYC e GrapheneOS.",
+        "url": "https://shop.priorato.org/",
+        "image": "https://shop.priorato.org/og-image.png",
+        "knowsAbout": [
+            "Privacy digitale",
+            "Bitcoin",
+            "GrapheneOS",
+            "Tor",
+            "VPN",
+            "Email cifrate",
+            "CoinJoin",
+            "Lightning Network",
+            "Hardware wallet",
+            "Threat modeling"
+        ],
+        "sameAs": [
+            "https://x.com/turtlecute33",
+            "https://t.me/Turtlecute33",
+            "https://instagram.com/turtlecute33"
+        ]
+    }
+    </script>
+
+    <!-- HowTo schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Come iniziare a proteggere la tua privacy digitale",
+        "description": "Percorso pratico in 5 step per ridurre la tua esposizione digitale, partendo da zero.",
+        "inLanguage": "it",
+        "totalTime": "P30D",
+        "estimatedCost": {"@type": "MonetaryAmount", "currency": "EUR", "value": "30"},
+        "supply": [
+            {"@type": "HowToSupply", "name": "Computer o smartphone"},
+            {"@type": "HowToSupply", "name": "Connessione internet"}
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Definisci il tuo threat model",
+                "text": "Identifica da chi vuoi proteggerti (data broker, advertiser, governi, stalker) e quali dati ti preoccupano di più. Senza un threat model definito, ogni soluzione è uno spreco di tempo."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Sostituisci gli strumenti più esposti",
+                "text": "Passa a email cifrata (Proton, Tutanota), browser privacy-friendly (Brave, Mullvad Browser), motore di ricerca senza tracking (DuckDuckGo, Brave Search) e password manager open source (Bitwarden, KeePassXC)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Cifra le tue comunicazioni",
+                "text": "Usa Signal o Session per i messaggi. Configura PGP per le email sensibili. Attiva la crittografia del disco (FileVault, BitLocker, LUKS) su tutti i device."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Riduci la tracciabilità",
+                "text": "Usa Tor Browser per la navigazione anonima, una VPN no-log (Mullvad, IVPN) per il traffico generale, una SIM no-KYC per ridurre il legame fra identità reale e numero di telefono."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Sostituisci il sistema operativo del telefono",
+                "text": "Installa GrapheneOS su un Pixel supportato. È il sistema operativo mobile con il miglior compromesso tra privacy, sicurezza e usabilità per la maggior parte degli utenti."
+            }
+        ]
+    }
+    </script>
+
+    <!-- Self-hosted fonts (privacy: no requests to Google) -->
+    <link rel="preload" href="fonts/inter-latin-UcC73FwrK3.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/space-grotesk-latin-V8mQoQDjQS.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/fonts.css">
 
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         html{scroll-behavior:smooth}
+
+        /* A11y: skip link */
+        .skip{
+            position:absolute;top:-40px;left:0;
+            background:#c53030;color:#fff;
+            padding:10px 18px;z-index:100;
+            text-decoration:none;
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.78rem;font-weight:500;
+            letter-spacing:.05em;
+            transition:top .2s ease;
+        }
+        .skip:focus{top:0;outline:none}
+
+        /* A11y: focus-visible */
+        a:focus-visible,
+        button:focus-visible,
+        summary:focus-visible{
+            outline:2px solid #c53030;
+            outline-offset:3px;
+            border-radius:6px;
+        }
+        details summary:focus-visible{outline-offset:-2px}
+
+        /* A11y: reduced motion */
+        @media (prefers-reduced-motion: reduce){
+            *,*::before,*::after{
+                animation-duration:.01ms !important;
+                animation-iteration-count:1 !important;
+                transition-duration:.01ms !important;
+                scroll-behavior:auto !important;
+            }
+        }
 
         :root{
             --bg:#0a0a0a;
@@ -285,6 +533,15 @@
         }
         .hero-cta svg{transition:transform .3s var(--ease)}
         .hero-cta:hover svg{transform:translateY(3px)}
+
+        /* Footer freshness */
+        .foot-updated{
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.68rem;
+            color:var(--muted2);
+            letter-spacing:.04em;
+        }
+        .foot-updated time{color:var(--muted)}
 
         @keyframes enter{
             from{opacity:0;transform:translateY(22px)}
@@ -493,6 +750,8 @@
             border:1px solid var(--border);
             border-radius:var(--r);
             padding:32px;
+            display:flex;
+            flex-direction:column;
             transition:border-color .3s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease);
         }
         .quote:hover{
@@ -507,10 +766,13 @@
             margin-bottom:24px;
             padding-left:18px;
             border-left:2px solid var(--border);
+            flex-grow:1;
             transition:border-color .3s var(--ease);
         }
         .quote:hover blockquote{border-left-color:#555}
-        .q-who{display:flex;align-items:center;gap:12px}
+        .q-who{
+            display:flex;align-items:center;gap:12px;
+        }
         .q-av{
             width:38px;height:38px;
             border:1px solid var(--border);
@@ -549,7 +811,7 @@
             display:flex;align-items:center;justify-content:center;
             font-size:1.6rem;font-weight:700;
         }
-        .ab-body h4{
+        .ab-body h3{
             font-family:var(--brutal);
             font-size:1.05rem;font-weight:400;
             text-transform:uppercase;
@@ -572,7 +834,46 @@
         }
         .ab-tags span:hover{border-color:#555;color:var(--fg)}
 
-        /* ═══ FAQ — Fix 5 ═══ */
+        /* ═══ DEFINITIONS ═══ */
+        .defs{padding:69px 0 0}
+        .defs-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:1px;
+            background:var(--border);
+            border:1px solid var(--border);
+            border-radius:var(--r);
+            overflow:hidden;
+        }
+        .def{
+            background:var(--card);
+            padding:28px 30px;
+            transition:background .25s var(--ease);
+        }
+        .def:hover{background:#181817}
+        .def h3{
+            font-family:var(--brutal);
+            font-size:.92rem;font-weight:400;
+            text-transform:uppercase;letter-spacing:-.01em;
+            margin-bottom:10px;color:var(--fg);
+        }
+        .def-tag{
+            display:inline-block;
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.58rem;font-weight:500;
+            text-transform:uppercase;letter-spacing:.1em;
+            color:var(--muted2);
+            margin-bottom:14px;
+        }
+        .def p{
+            font-size:.88rem;color:var(--muted);
+            line-height:1.7;
+        }
+        @media(max-width:768px){
+            .defs-grid{grid-template-columns:1fr}
+        }
+
+        /* ═══ FAQ ═══ */
         .faq{padding:69px 0 0}
         .faq-list{display:flex;flex-direction:column;gap:1px}
         .faq-item{
@@ -695,6 +996,34 @@
         .foot-socials a:hover{color:var(--fg);background:rgba(255,255,255,.05)}
         .foot-socials svg{width:16px;height:16px}
 
+        /* ═══ STICKY CTA MOBILE ═══ */
+        .sticky-cta{
+            position:fixed;
+            left:16px;right:16px;bottom:16px;
+            z-index:90;
+            display:none;
+            align-items:center;justify-content:center;gap:10px;
+            padding:14px 22px;
+            background:var(--fg);color:var(--bg);
+            border-radius:var(--r-sm);
+            font-family:'Inter',system-ui,sans-serif;
+            font-size:.85rem;font-weight:700;
+            letter-spacing:-.01em;
+            text-decoration:none;
+            box-shadow:0 6px 24px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);
+            transform:translateY(120%);opacity:0;
+            transition:transform .35s var(--ease),opacity .35s var(--ease);
+        }
+        .sticky-cta.visible{transform:translateY(0);opacity:1}
+        .sticky-cta svg{
+            width:16px;height:16px;
+            stroke:currentColor;fill:none;stroke-width:2;
+            stroke-linecap:round;stroke-linejoin:round;
+        }
+        @media(max-width:768px){
+            .sticky-cta{display:flex}
+        }
+
         /* ═══ SCROLL REVEAL ═══ */
         .sr{
             opacity:0;
@@ -741,17 +1070,19 @@
 </head>
 <body>
 
-<div class="w">
+<a href="#soluzioni" class="skip">Vai al contenuto</a>
+
+<main class="w">
 
     <!-- HERO -->
     <section class="hero">
-        <h1>I tuoi dati sono <span class="hl">gia' esposti</span></h1>
+        <h1>I tuoi dati sono <span class="hl">già esposti</span></h1>
         <p class="hero-p">Ogni giorno le tue comunicazioni, la tua posizione e le tue transazioni vengono raccolte e vendute. Puoi cambiare le cose.</p>
         <!-- Fix 3: Hero CTA -->
         <a href="#soluzioni" class="hero-cta">Scopri le soluzioni <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7l7 7 7-7"/></svg></a>
     </section>
 
-    <!-- THREATS — Fix 4: h4→h3 for proper hierarchy -->
+    <!-- THREATS -->
     <section class="threats sr">
         <div class="threat-strip">
             <div class="threat-pill">
@@ -817,7 +1148,7 @@
                     </div>
                     <h3>SIM no KYC</h3>
                     <p class="desc">Numeri di telefono senza KYC per proteggere la tua identità. Nessuna verifica, nessun documento, nessuna traccia.</p>
-                    <span class="card-price">da €12</span>
+                    <span class="card-price">da €15</span>
                     <div class="urgency-note">
                         <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
                         Le normative UE si stanno stringendo. Questa finestra non resterà aperta per sempre.
@@ -876,19 +1207,44 @@
         <div class="about-card sr">
             <div class="ab-avatar">t</div>
             <div class="ab-body">
-                <h4>@turtlecute33</h4>
-                <p>Privacy advocate e bitcoiner. Creo guide pratiche, strumenti e servizi per chi vuole riprendere il controllo della propria vita digitale. Nessuna teoria, solo soluzioni che uso io stesso ogni giorno.</p>
+                <h3>@turtlecute33</h3>
+                <p>Privacy advocate e bitcoiner italiano. Creo guide, strumenti e servizi per chi vuole riprendere il controllo della propria vita digitale: dalla prima VPN al setup completo con GrapheneOS, SIM no-KYC e Bitcoin senza KYC. Nessuna teoria astratta, solo soluzioni testate sul campo e usate ogni giorno.</p>
                 <div class="ab-tags">
                     <span>Privacy</span>
                     <span>Bitcoin</span>
                     <span>GrapheneOS</span>
+                    <span>Tor</span>
+                    <span>Lightning</span>
+                    <span>Self-hosted</span>
                     <span>Open Source</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ — Fix 5 -->
+    <!-- DEFINITIONS -->
+    <section class="defs" id="termini">
+        <div class="proof-head compact sr"><h2 class="section-title">Cosa significano questi termini</h2></div>
+        <div class="defs-grid sr-stagger">
+            <article class="def" id="def-sim-no-kyc">
+                <span class="def-tag">Telefonia</span>
+                <h3>SIM no-KYC</h3>
+                <p>Una SIM no-KYC è una scheda telefonica attivabile senza presentare documenti d'identità. Il numero non viene collegato a nome e codice fiscale, riducendo tracciamento e profilazione. In Italia non si acquistano sul territorio, ma sono disponibili numeri esteri da operatori in giurisdizioni privacy-friendly.</p>
+            </article>
+            <article class="def" id="def-grapheneos">
+                <span class="def-tag">Sistema operativo</span>
+                <h3>GrapheneOS</h3>
+                <p>GrapheneOS è un sistema operativo mobile open source basato su Android, sviluppato per privacy e sicurezza. Si installa esclusivamente su Google Pixel e sostituisce Android stock. Offre sandboxing avanzato, disattivazione granulare dei sensori, niente Google Services di sistema e patch di sicurezza più rapide.</p>
+            </article>
+            <article class="def" id="def-e2ee">
+                <span class="def-tag">Cifratura</span>
+                <h3>End-to-end encryption</h3>
+                <p>La cifratura end-to-end (E2EE) protegge i dati dall'invio fino alla ricezione: solo mittente e destinatario possono leggerli, nemmeno il provider del servizio. Signal, ProtonMail e Tutanota la implementano correttamente. WhatsApp la usa sui messaggi, ma conserva metadati estesi su chi parla con chi, quando e da dove.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ -->
     <section class="faq">
         <div class="proof-head compact sr"><h2 class="section-title">Domande frequenti</h2></div>
         <div class="faq-list sr">
@@ -913,6 +1269,28 @@
                 <summary>Le guide vengono aggiornate?</summary>
                 <p>Sì. Quando cambiano strumenti, software o normative, le guide vengono aggiornate. Chi ha acquistato riceve accesso agli aggiornamenti.</p>
             </details>
+            <details class="faq-item">
+                <summary>Le SIM no-KYC sono legali in Italia?</summary>
+                <p>L'acquisto e l'uso di una SIM no-KYC straniera è legale in Italia. La normativa italiana impone l'identificazione a chi vende SIM <strong>nazionali</strong>, ma non vieta di utilizzare numeri esteri o servizi di privacy. Verifica sempre la giurisdizione di emissione e i suoi obblighi di conservazione dati prima di sceglierla.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Come si compra Bitcoin senza KYC in Italia?</summary>
+                <p>Le opzioni principali sono: piattaforme <strong>peer-to-peer</strong> come Bisq, HodlHodl e Robosats, dove gli utenti scambiano direttamente; alcuni ATM Bitcoin sotto soglie ridotte; mining; pagamento per beni e servizi resi.</p>
+                <p>La <strong>Guida Privacy Bitcoin</strong> spiega ogni metodo con vantaggi, rischi, setup pratico e implicazioni fiscali italiane.</p>
+            </details>
+            <details class="faq-item">
+                <summary>GrapheneOS è legale in Italia e vale la pena installarlo?</summary>
+                <p>Sì, GrapheneOS è perfettamente legale e si installa solo su <strong>Google Pixel ufficiali</strong>. Vale la pena se cerchi un sistema mobile con privacy e sicurezza superiori ad Android stock e iOS, mantenendo la compatibilità con la maggior parte delle app (incluso Play Store in sandbox e app bancarie italiane).</p>
+            </details>
+            <details class="faq-item">
+                <summary>Quale VPN conviene scegliere in Italia nel 2026?</summary>
+                <p>Le VPN più rispettose della privacy oggi sono <strong>Mullvad, IVPN e Obscura VPN</strong>. Criteri chiave: policy no-log auditata da terze parti, pagamento anonimo (Bitcoin o contanti), niente email obbligatoria, giurisdizione trasparente.</p>
+                <p>⚠ Una VPN non rende anonimi: protegge dal provider locale, ma il provider VPN vede comunque il traffico. Per anonimato vero serve Tor.</p>
+            </details>
+            <details class="faq-item">
+                <summary>A chi serve una guida sulla privacy digitale?</summary>
+                <p>Serve a chiunque voglia ridurre la propria esposizione a tracciamento commerciale, profilazione, data broker, stalking o sorveglianza. È particolarmente utile a giornalisti, attivisti, professionisti che gestiscono dati sensibili (avvocati, medici, commercialisti), imprenditori e a chiunque consideri la privacy un diritto fondamentale e voglia esercitarlo concretamente.</p>
+            </details>
         </div>
     </section>
 
@@ -934,23 +1312,48 @@
             <div class="foot-brand">
                 <div class="foot-dot"></div>
                 <span>Made with 🔐 by <a href="https://x.com/turtlecute33">@turtlecute33</a></span>
+                <span class="foot-updated">· ultimo aggiornamento <time datetime="2026-05-08">8 maggio 2026</time></span>
             </div>
             <div class="foot-socials">
-                <a href="https://x.com/turtlecute33" title="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                <a href="https://t.me/Turtlecute33" title="Telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
-                <a href="https://instagram.com/turtlecute33" title="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
-                <a href="mailto:turtlecute@proton.me" title="Email" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+                <a href="https://x.com/turtlecute33" aria-label="Profilo X (Twitter) di turtlecute33" title="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="https://t.me/Turtlecute33" aria-label="Canale Telegram di turtlecute33" title="Telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                <a href="https://instagram.com/turtlecute33" aria-label="Profilo Instagram di turtlecute33" title="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+                <a href="mailto:turtlecute@proton.me" aria-label="Email a turtlecute@proton.me" title="Email" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
             </div>
         </div>
     </footer>
 
-</div>
+</main>
+
+<a href="#soluzioni" class="sticky-cta" data-umami-event="Sticky CTA mobile" aria-label="Vai alle soluzioni">
+    Scegli la tua guida
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+</a>
 
 <script>
 const io=new IntersectionObserver(e=>{
     e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})
 },{threshold:.12});
 document.querySelectorAll('.sr,.sr-stagger').forEach(el=>io.observe(el));
+
+// Sticky CTA: visibile dopo l'hero, nascosto quando prodotti o CTA finale sono in vista
+(()=>{
+    const sticky=document.querySelector('.sticky-cta');
+    const hero=document.querySelector('.hero');
+    const blockers=[document.getElementById('soluzioni'),document.querySelector('.cta-box')].filter(Boolean);
+    if(!sticky||!hero) return;
+    let heroOut=false;
+    const blockerVisible=new Map();
+    const update=()=>{
+        const anyBlocker=[...blockerVisible.values()].some(Boolean);
+        sticky.classList.toggle('visible',heroOut&&!anyBlocker);
+    };
+    new IntersectionObserver(en=>{heroOut=!en[0].isIntersecting;update()},{threshold:0}).observe(hero);
+    blockers.forEach(el=>{
+        blockerVisible.set(el,false);
+        new IntersectionObserver(en=>{blockerVisible.set(el,en[0].isIntersecting);update()},{threshold:.4}).observe(el);
+    });
+})();
 </script>
 
 </body>

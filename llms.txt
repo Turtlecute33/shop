@@ -1,0 +1,29 @@
+# Guide Privacy
+
+> Guide pratiche, SIM no-KYC e telefoni con GrapheneOS per la privacy digitale italiana. Sito di turtlecute33. In italiano. Pagamenti accettati in Bitcoin via BTCPay self-hosted, niente tracker di terze parti.
+
+## Prodotti
+
+- [Guida Privacy Digitale](https://shop.priorato.org/): manuale pratico per proteggere dati, identità e comunicazioni online. Copre VPN, email cifrate, browser sicuri, Tor, GrapheneOS, password manager, SIM anonime. €30.
+- [Guida Privacy Bitcoin](https://shop.priorato.org/): manuale per utilizzare Bitcoin in modo privato. Copre UTXO, chain analysis, hardware wallet, Sparrow, Lightning Network, CoinJoin, Wasabi, Whirlpool e acquisto no-KYC. €30.
+- [Bundle Completo](https://shop.priorato.org/): le due guide insieme a prezzo ridotto. €50.
+- [SIM no-KYC](https://shop.priorato.org/): numeri di telefono esteri senza verifica identità. Da €15.
+- [Privacy Phone](https://shop.priorato.org/): Google Pixel con GrapheneOS pre-installato e configurazione personalizzata. Da €650.
+
+## Termini chiave
+
+- SIM no-KYC: scheda telefonica attivabile senza presentare documenti d'identità. In Italia non si vendono sul territorio, ma sono disponibili numeri esteri da operatori in giurisdizioni privacy-friendly.
+- GrapheneOS: sistema operativo mobile open source basato su Android, focalizzato su privacy e sicurezza. Si installa solo su Google Pixel ufficiali.
+- End-to-end encryption (E2EE): cifratura che protegge i dati dall'invio fino alla ricezione, leggibili solo da mittente e destinatario, mai dal provider del servizio.
+
+## Domande frequenti
+
+- Le SIM no-KYC sono legali in Italia: sì. L'uso di numeri esteri o di operatori privacy è legale; la normativa italiana richiede l'identificazione solo per la vendita di SIM nazionali.
+- Come si compra Bitcoin senza KYC in Italia: piattaforme peer-to-peer (Bisq, HodlHodl, Robosats), alcuni ATM sotto soglie ridotte, mining, pagamento per beni e servizi.
+- GrapheneOS è legale e vale la pena: sì a entrambe. Sistema mobile con privacy e sicurezza superiori ad Android stock e iOS, mantiene compatibilità con Play Store sandboxed e app bancarie italiane.
+- Quale VPN conviene scegliere in Italia: Mullvad, IVPN, Obscura VPN. Criteri: policy no-log auditata, pagamento anonimo, niente email obbligatoria, giurisdizione trasparente. Una VPN non rende anonimi: per anonimato serve Tor.
+- Quanto retention dati hanno gli operatori telefonici italiani: fino a 24 mesi per fini di giustizia ordinaria, fino a 6 anni per reati gravi (DL 132/2021, Codice Privacy art. 132).
+
+## Autore
+
+- [turtlecute33](https://shop.priorato.org/): privacy advocate e bitcoiner italiano. Crea guide, strumenti e servizi per chi vuole riprendere il controllo della propria vita digitale. Soluzioni testate sul campo, niente teoria astratta.
