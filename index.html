@@ -998,34 +998,6 @@
         /* mail icon is stroke-based: compensate optical size vs filled icons */
         .foot-socials a[href^="mailto"] svg{width:18px;height:18px}
 
-        /* ═══ STICKY CTA MOBILE ═══ */
-        .sticky-cta{
-            position:fixed;
-            left:16px;right:16px;bottom:16px;
-            z-index:90;
-            display:none;
-            align-items:center;justify-content:center;gap:10px;
-            padding:14px 22px;
-            background:var(--fg);color:var(--bg);
-            border-radius:var(--r-sm);
-            font-family:'Inter',system-ui,sans-serif;
-            font-size:.85rem;font-weight:700;
-            letter-spacing:-.01em;
-            text-decoration:none;
-            box-shadow:0 6px 24px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);
-            transform:translateY(120%);opacity:0;
-            transition:transform .35s var(--ease),opacity .35s var(--ease);
-        }
-        .sticky-cta.visible{transform:translateY(0);opacity:1}
-        .sticky-cta svg{
-            width:16px;height:16px;
-            stroke:currentColor;fill:none;stroke-width:2;
-            stroke-linecap:round;stroke-linejoin:round;
-        }
-        @media(max-width:768px){
-            .sticky-cta{display:flex}
-        }
-
         /* ═══ SCROLL REVEAL ═══ */
         .sr{
             opacity:0;
@@ -1327,11 +1299,6 @@
 
 </main>
 
-<a href="#soluzioni" class="sticky-cta" data-umami-event="Sticky CTA mobile" aria-label="Vai alle soluzioni">
-    Scegli la tua guida
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-</a>
-
 <script>
 const io=new IntersectionObserver(e=>{
     e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})
@@ -1345,24 +1312,6 @@ document.querySelectorAll('.faq-item').forEach(d=>{
     });
 });
 
-// Sticky CTA: visibile dopo l'hero, nascosto quando prodotti o CTA finale sono in vista
-(()=>{
-    const sticky=document.querySelector('.sticky-cta');
-    const hero=document.querySelector('.hero');
-    const blockers=[document.getElementById('soluzioni'),document.querySelector('.cta-box')].filter(Boolean);
-    if(!sticky||!hero) return;
-    let heroOut=false;
-    const blockerVisible=new Map();
-    const update=()=>{
-        const anyBlocker=[...blockerVisible.values()].some(Boolean);
-        sticky.classList.toggle('visible',heroOut&&!anyBlocker);
-    };
-    new IntersectionObserver(en=>{heroOut=!en[0].isIntersecting;update()},{threshold:0}).observe(hero);
-    blockers.forEach(el=>{
-        blockerVisible.set(el,false);
-        new IntersectionObserver(en=>{blockerVisible.set(el,en[0].isIntersecting);update()},{threshold:.4}).observe(el);
-    });
-})();
 </script>
 
 </body>

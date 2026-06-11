@@ -572,30 +572,6 @@
         /* mail icon is stroke-based: compensate optical size vs filled icons */
         .foot-socials a[href^="mailto"] svg{width:18px;height:18px}
 
-        /* ═══ STICKY CTA MOBILE ═══ */
-        .sticky-cta{
-            position:fixed;
-            left:16px;right:16px;bottom:16px;
-            z-index:90;
-            display:none;
-            align-items:center;justify-content:center;gap:10px;
-            padding:14px 22px;
-            background:var(--fg);color:var(--bg);
-            border-radius:var(--r-sm);
-            font-family:'Inter',system-ui,sans-serif;
-            font-size:.85rem;font-weight:700;
-            letter-spacing:-.01em;
-            text-decoration:none;
-            box-shadow:0 6px 24px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);
-            transform:translateY(120%);opacity:0;
-            transition:transform .35s var(--ease),opacity .35s var(--ease);
-        }
-        .sticky-cta.visible{transform:translateY(0);opacity:1}
-        .sticky-cta svg{width:16px;height:16px;fill:currentColor}
-        @media(max-width:768px){
-            .sticky-cta{display:flex}
-        }
-
         /* ═══ SCROLL REVEAL ═══ */
         .sr{
             opacity:0;
@@ -817,11 +793,6 @@
 
 </main>
 
-<a href="https://t.me/Turtlecute33" class="sticky-cta" data-umami-event="Phone Sticky CTA mobile" target="_blank" rel="noopener" aria-label="Scrivimi su Telegram">
-    Scrivimi su Telegram
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-</a>
-
 <script>
 const io=new IntersectionObserver(e=>{
     e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})
@@ -835,17 +806,6 @@ document.querySelectorAll('.faq-item').forEach(d=>{
     });
 });
 
-// Sticky CTA: visibile dopo l'hero, nascosto quando il CTA finale è in vista
-(()=>{
-    const sticky=document.querySelector('.sticky-cta');
-    const hero=document.querySelector('.hero');
-    const blocker=document.querySelector('.cta-box');
-    if(!sticky||!hero) return;
-    let heroOut=false,blockerIn=false;
-    const update=()=>sticky.classList.toggle('visible',heroOut&&!blockerIn);
-    new IntersectionObserver(en=>{heroOut=!en[0].isIntersecting;update()},{threshold:0}).observe(hero);
-    if(blocker) new IntersectionObserver(en=>{blockerIn=en[0].isIntersecting;update()},{threshold:.4}).observe(blocker);
-})();
 </script>
 
 </body>
