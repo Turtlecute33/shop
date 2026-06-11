@@ -225,7 +225,7 @@
         .crumb a:hover svg{transform:translateX(-3px)}
 
         /* ═══ HERO ═══ */
-        .hero{padding:88px 0 69px}
+        .hero{padding:88px 0 64px}
         .hero h1{
             font-family:'Space Grotesk',system-ui,sans-serif;
             font-size:clamp(2.4rem,6.5vw,4.6rem);
@@ -321,7 +321,7 @@
         }
 
         /* ═══ PRICING ═══ */
-        .pricing{padding:69px 0 0}
+        .pricing{padding:96px 0 0}
         .price-table{
             background:var(--card);
             border:1px solid var(--border);
@@ -367,7 +367,7 @@
         }
 
         /* ═══ INCLUDED ═══ */
-        .included{padding:69px 0 0}
+        .included{padding:96px 0 0}
         .inc-grid{
             display:grid;
             grid-template-columns:repeat(2,1fr);
@@ -400,7 +400,7 @@
         }
 
         /* ═══ HOW IT WORKS ═══ */
-        .how{padding:69px 0 0}
+        .how{padding:96px 0 0}
         .steps{
             display:grid;
             grid-template-columns:repeat(3,1fr);
@@ -433,7 +433,7 @@
         }
 
         /* ═══ FAQ ═══ */
-        .faq{padding:69px 0 0}
+        .faq{padding:96px 0 0}
         .faq-item{
             background:var(--card);
             border:1px solid var(--border);
@@ -470,7 +470,7 @@
         .faq-item p:first-of-type{padding-top:0}
 
         /* ═══ CTA ═══ */
-        .cta{padding:69px 0 24px}
+        .cta{padding:96px 0 24px}
         .cta-box{
             position:relative;overflow:hidden;
             border:1px solid var(--border);
@@ -592,8 +592,10 @@
         /* ═══ RESPONSIVE ═══ */
         @media(max-width:768px){
             .w{padding:0 24px}
-            .hero{padding:64px 0 60px}
+            .hero{padding:64px 0 48px}
             .hero h1{font-size:clamp(2rem,8.5vw,3rem)}
+            .pricing,.included,.how,.faq{padding:72px 0 0}
+            .cta{padding:72px 0 24px}
             .point-strip{grid-template-columns:1fr}
             .point-pill{
                 border-right:none;

@@ -394,7 +394,7 @@
 
         /* ═══ HERO ═══ */
         .hero{
-            padding:160px 0 69px;
+            padding:160px 0 64px;
         }
         .hero h1{
             font-family:'Space Grotesk',system-ui,sans-serif;
@@ -522,7 +522,7 @@
 
         /* ═══ PRODUCTS ═══ */
         .products{
-            padding:69px 0 81px;
+            padding:64px 0 0;
         }
         .grid{
             display:grid;
@@ -643,10 +643,10 @@
 
         /* ═══ TESTIMONIALS ═══ */
         .proof{
-            padding:69px 0 81px;
+            padding:120px 0 0;
         }
         .proof-head{margin-bottom:44px}
-        .proof-head.compact{margin-bottom:20px}
+        .proof-head.compact{margin-bottom:32px}
         .proof-head h3,
         .proof-head .section-title{
             font-family:'Space Grotesk',system-ui,sans-serif;
@@ -712,7 +712,7 @@
 
         /* ═══ AUTHOR ═══ */
         .about{
-            padding:69px 0 81px;
+            padding:120px 0 0;
         }
         .about-card{
             display:flex;align-items:center;gap:32px;
@@ -754,13 +754,12 @@
         .ab-tags span:hover{border-color:#555;color:var(--fg)}
 
         /* ═══ FAQ ═══ */
-        .faq{padding:69px 0 0}
-        .faq-list{display:flex;flex-direction:column;gap:1px}
+        .faq{padding:120px 0 0}
+        .faq-list{display:flex;flex-direction:column;gap:8px}
         .faq-item{
             background:var(--card);
             border:1px solid var(--border);
             border-radius:var(--r);
-            margin-bottom:8px;
             transition:border-color .3s var(--ease);
         }
         .faq-item:hover{border-color:#484846}
@@ -794,7 +793,7 @@
         .faq-item p:first-of-type{padding-top:0}
 
         /* ═══ CTA ═══ */
-        .cta{padding:69px 0 24px}
+        .cta{padding:120px 0 24px}
         .cta-box{
             text-align:center;
             border:1px solid var(--border);
@@ -900,8 +899,11 @@
         /* ═══ RESPONSIVE ═══ */
         @media(max-width:768px){
             .w{padding:0 24px}
-            .hero{padding:110px 0 72px}
+            .hero{padding:110px 0 48px}
             .hero h1{font-size:clamp(2.2rem,9vw,3.2rem)}
+            .products{padding:48px 0 0}
+            .proof,.about,.faq{padding:88px 0 0}
+            .cta{padding:88px 0 24px}
             .threat-strip{grid-template-columns:1fr}
             .threat-pill{
                 border-right:none;
