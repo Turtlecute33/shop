@@ -216,38 +216,6 @@
                     "@type": "Answer",
                     "text": "L'acquisto e l'uso di una SIM no-KYC straniera è legale in Italia. La normativa italiana impone l'identificazione a chi vende SIM nazionali, ma non vieta di utilizzare numeri esteri o servizi di privacy. Verifica sempre la giurisdizione di emissione e i suoi obblighi di conservazione dati prima di sceglierla."
                 }
-            },
-            {
-                "@type": "Question",
-                "name": "Come si compra Bitcoin senza KYC in Italia?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Le opzioni principali sono: piattaforme peer-to-peer come Bisq, HodlHodl e Robosats, dove gli utenti scambiano direttamente; alcuni ATM Bitcoin sotto soglie ridotte; mining; pagamento per beni e servizi. La Guida Privacy Bitcoin spiega ogni metodo con vantaggi, rischi, setup pratico e implicazioni fiscali."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "GrapheneOS è legale in Italia e vale la pena installarlo?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sì, GrapheneOS è perfettamente legale e si installa solo su Google Pixel ufficiali. Vale la pena se cerchi un sistema mobile con privacy e sicurezza superiori ad Android stock e iOS, mantenendo compatibilità con la maggior parte delle app (incluse Play Store in sandbox e app bancarie)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Quale VPN conviene scegliere in Italia nel 2026?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Le VPN più rispettose della privacy oggi sono Mullvad, IVPN e Obscura VPN. Criteri chiave: policy no-log auditata da terze parti, pagamento anonimo (Bitcoin o contanti), niente email obbligatoria all'iscrizione, giurisdizione trasparente. Una VPN non rende anonimi: protegge dal provider locale, ma il provider VPN vede comunque il traffico."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "A chi serve una guida sulla privacy digitale?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Serve a chiunque voglia ridurre la propria esposizione a tracciamento commerciale, profilazione, data broker, stalking o sorveglianza. È particolarmente utile a giornalisti, attivisti, professionisti che gestiscono dati sensibili (avvocati, medici, commercialisti), imprenditori e chiunque consideri la privacy un diritto fondamentale e voglia esercitarlo concretamente."
-                }
             }
         ]
     }
@@ -343,55 +311,6 @@
             "https://x.com/turtlecute33",
             "https://t.me/Turtlecute33",
             "https://instagram.com/turtlecute33"
-        ]
-    }
-    </script>
-
-    <!-- HowTo schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Come iniziare a proteggere la tua privacy digitale",
-        "description": "Percorso pratico in 5 step per ridurre la tua esposizione digitale, partendo da zero.",
-        "inLanguage": "it",
-        "totalTime": "P30D",
-        "estimatedCost": {"@type": "MonetaryAmount", "currency": "EUR", "value": "30"},
-        "supply": [
-            {"@type": "HowToSupply", "name": "Computer o smartphone"},
-            {"@type": "HowToSupply", "name": "Connessione internet"}
-        ],
-        "step": [
-            {
-                "@type": "HowToStep",
-                "position": 1,
-                "name": "Definisci il tuo threat model",
-                "text": "Identifica da chi vuoi proteggerti (data broker, advertiser, governi, stalker) e quali dati ti preoccupano di più. Senza un threat model definito, ogni soluzione è uno spreco di tempo."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 2,
-                "name": "Sostituisci gli strumenti più esposti",
-                "text": "Passa a email cifrata (Proton, Tutanota), browser privacy-friendly (Brave, Mullvad Browser), motore di ricerca senza tracking (DuckDuckGo, Brave Search) e password manager open source (Bitwarden, KeePassXC)."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 3,
-                "name": "Cifra le tue comunicazioni",
-                "text": "Usa Signal o Session per i messaggi. Configura PGP per le email sensibili. Attiva la crittografia del disco (FileVault, BitLocker, LUKS) su tutti i device."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 4,
-                "name": "Riduci la tracciabilità",
-                "text": "Usa Tor Browser per la navigazione anonima, una VPN no-log (Mullvad, IVPN) per il traffico generale, una SIM no-KYC per ridurre il legame fra identità reale e numero di telefono."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 5,
-                "name": "Sostituisci il sistema operativo del telefono",
-                "text": "Installa GrapheneOS su un Pixel supportato. È il sistema operativo mobile con il miglior compromesso tra privacy, sicurezza e usabilità per la maggior parte degli utenti."
-            }
         ]
     }
     </script>
@@ -834,45 +753,6 @@
         }
         .ab-tags span:hover{border-color:#555;color:var(--fg)}
 
-        /* ═══ DEFINITIONS ═══ */
-        .defs{padding:69px 0 0}
-        .defs-grid{
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:1px;
-            background:var(--border);
-            border:1px solid var(--border);
-            border-radius:var(--r);
-            overflow:hidden;
-        }
-        .def{
-            background:var(--card);
-            padding:28px 30px;
-            transition:background .25s var(--ease);
-        }
-        .def:hover{background:#181817}
-        .def h3{
-            font-family:var(--brutal);
-            font-size:.92rem;font-weight:400;
-            text-transform:uppercase;letter-spacing:-.01em;
-            margin-bottom:10px;color:var(--fg);
-        }
-        .def-tag{
-            display:inline-block;
-            font-family:'JetBrains Mono',ui-monospace,monospace;
-            font-size:.58rem;font-weight:500;
-            text-transform:uppercase;letter-spacing:.1em;
-            color:var(--muted2);
-            margin-bottom:14px;
-        }
-        .def p{
-            font-size:.88rem;color:var(--muted);
-            line-height:1.7;
-        }
-        @media(max-width:768px){
-            .defs-grid{grid-template-columns:1fr}
-        }
-
         /* ═══ FAQ ═══ */
         .faq{padding:69px 0 0}
         .faq-list{display:flex;flex-direction:column;gap:1px}
@@ -1196,28 +1076,6 @@
         </div>
     </section>
 
-    <!-- DEFINITIONS -->
-    <section class="defs" id="termini">
-        <div class="proof-head compact sr"><h2 class="section-title">Cosa significano questi termini</h2></div>
-        <div class="defs-grid sr-stagger">
-            <article class="def" id="def-sim-no-kyc">
-                <span class="def-tag">Telefonia</span>
-                <h3>SIM no-KYC</h3>
-                <p>Una SIM no-KYC è una scheda telefonica attivabile senza presentare documenti d'identità. Il numero non viene collegato a nome e codice fiscale, riducendo tracciamento e profilazione. In Italia non si acquistano sul territorio, ma sono disponibili numeri esteri da operatori in giurisdizioni privacy-friendly.</p>
-            </article>
-            <article class="def" id="def-grapheneos">
-                <span class="def-tag">Sistema operativo</span>
-                <h3>GrapheneOS</h3>
-                <p>GrapheneOS è un sistema operativo mobile open source basato su Android, sviluppato per privacy e sicurezza. Si installa esclusivamente su Google Pixel e sostituisce Android stock. Offre sandboxing avanzato, disattivazione granulare dei sensori, niente Google Services di sistema e patch di sicurezza più rapide.</p>
-            </article>
-            <article class="def" id="def-e2ee">
-                <span class="def-tag">Cifratura</span>
-                <h3>End-to-end encryption</h3>
-                <p>La cifratura end-to-end (E2EE) protegge i dati dall'invio fino alla ricezione: solo mittente e destinatario possono leggerli, nemmeno il provider del servizio. Signal, ProtonMail e Tutanota la implementano correttamente. WhatsApp la usa sui messaggi, ma conserva metadati estesi su chi parla con chi, quando e da dove.</p>
-            </article>
-        </div>
-    </section>
-
     <!-- FAQ -->
     <section class="faq">
         <div class="proof-head compact sr"><h2 class="section-title">Domande frequenti</h2></div>
@@ -1246,24 +1104,6 @@
             <details class="faq-item">
                 <summary>Le SIM no-KYC sono legali in Italia?</summary>
                 <p>L'acquisto e l'uso di una SIM no-KYC straniera è legale in Italia. La normativa italiana impone l'identificazione a chi vende SIM <strong>nazionali</strong>, ma non vieta di utilizzare numeri esteri o servizi di privacy. Verifica sempre la giurisdizione di emissione e i suoi obblighi di conservazione dati prima di sceglierla.</p>
-            </details>
-            <details class="faq-item">
-                <summary>Come si compra Bitcoin senza KYC in Italia?</summary>
-                <p>Le opzioni principali sono: piattaforme <strong>peer-to-peer</strong> come Bisq, HodlHodl e Robosats, dove gli utenti scambiano direttamente; alcuni ATM Bitcoin sotto soglie ridotte; mining; pagamento per beni e servizi resi.</p>
-                <p>La <strong>Guida Privacy Bitcoin</strong> spiega ogni metodo con vantaggi, rischi, setup pratico e implicazioni fiscali italiane.</p>
-            </details>
-            <details class="faq-item">
-                <summary>GrapheneOS è legale in Italia e vale la pena installarlo?</summary>
-                <p>Sì, GrapheneOS è perfettamente legale e si installa solo su <strong>Google Pixel ufficiali</strong>. Vale la pena se cerchi un sistema mobile con privacy e sicurezza superiori ad Android stock e iOS, mantenendo la compatibilità con la maggior parte delle app (incluso Play Store in sandbox e app bancarie italiane).</p>
-            </details>
-            <details class="faq-item">
-                <summary>Quale VPN conviene scegliere in Italia nel 2026?</summary>
-                <p>Le VPN più rispettose della privacy oggi sono <strong>Mullvad, IVPN e Obscura VPN</strong>. Criteri chiave: policy no-log auditata da terze parti, pagamento anonimo (Bitcoin o contanti), niente email obbligatoria, giurisdizione trasparente.</p>
-                <p>⚠ Una VPN non rende anonimi: protegge dal provider locale, ma il provider VPN vede comunque il traffico. Per anonimato vero serve Tor.</p>
-            </details>
-            <details class="faq-item">
-                <summary>A chi serve una guida sulla privacy digitale?</summary>
-                <p>Serve a chiunque voglia ridurre la propria esposizione a tracciamento commerciale, profilazione, data broker, stalking o sorveglianza. È particolarmente utile a giornalisti, attivisti, professionisti che gestiscono dati sensibili (avvocati, medici, commercialisti), imprenditori e a chiunque consideri la privacy un diritto fondamentale e voglia esercitarlo concretamente.</p>
             </details>
         </div>
     </section>
