@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security: defense in depth -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://umami.priorato.org; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://umami.priorato.org; form-action 'none'; base-uri 'self'; upgrade-insecure-requests">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Primary Meta Tags -->
+    <title>Privacy Phone con GrapheneOS | Pixel configurato su misura</title>
+    <meta name="title" content="Privacy Phone con GrapheneOS | Pixel configurato su misura">
+    <meta name="description" content="Google Pixel con GrapheneOS pre-installato e setup di privacy su misura: Google Play Services in sandbox con privacy in più, VPN o Tor in base alle esigenze. Consulenza, spedizione e video di spiegazione inclusi nel prezzo.">
+    <meta name="author" content="turtlecute33">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="Italian">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://shop.priorato.org/privacy-phone">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shop.priorato.org/privacy-phone">
+    <meta property="og:site_name" content="Guide Privacy">
+    <meta property="og:title" content="Privacy Phone con GrapheneOS | Pixel configurato su misura">
+    <meta property="og:description" content="Google Pixel con GrapheneOS pre-installato e setup di privacy personalizzato. Consulenza, spedizione e video di spiegazione inclusi nel prezzo.">
+    <meta property="og:image" content="https://shop.priorato.org/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Privacy Phone con GrapheneOS">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://shop.priorato.org/privacy-phone">
+    <meta name="twitter:title" content="Privacy Phone con GrapheneOS | Pixel configurato su misura">
+    <meta name="twitter:description" content="Google Pixel con GrapheneOS pre-installato e setup di privacy personalizzato. Tutto incluso nel prezzo.">
+    <meta name="twitter:image" content="https://shop.priorato.org/og-image.png">
+    <meta name="twitter:image:alt" content="Privacy Phone con GrapheneOS">
+    <meta name="twitter:creator" content="@turtlecute33">
+    <meta name="twitter:site" content="@turtlecute33">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+
+    <!-- Analytics -->
+    <script defer src="https://umami.priorato.org/priorato.js" data-website-id="1655d95f-6a9e-450b-a9b0-e62af3ddee50"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://shop.priorato.org/privacy-phone#product",
+        "name": "Privacy Phone con GrapheneOS",
+        "description": "Google Pixel con GrapheneOS pre-installato e setup di privacy su misura: Google Play Services in sandbox con privacy in più, VPN o Tor in base alle esigenze. Consulenza, spedizione tracciata e video di spiegazione inclusi.",
+        "category": "Hardware / Privacy",
+        "brand": {"@type": "Brand", "name": "Guide Privacy"},
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "650.00",
+            "highPrice": "1400.00",
+            "priceCurrency": "EUR",
+            "offerCount": 4,
+            "availability": "https://schema.org/InStock",
+            "url": "https://shop.priorato.org/privacy-phone",
+            "seller": {"@type": "Organization", "name": "Guide Privacy", "url": "https://shop.priorato.org/"}
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Guide Privacy", "item": "https://shop.priorato.org/"},
+            {"@type": "ListItem", "position": 2, "name": "Privacy Phone", "item": "https://shop.priorato.org/privacy-phone"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Posso usare le app di tutti i giorni su GrapheneOS?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sì. GrapheneOS ha la stessa usabilità di un Android normale ed è compatibile con il 99,99% delle app, incluse quelle bancarie italiane: le eccezioni sono poche mosche bianche. I Google Play Services si possono installare in sandbox: girano come app normali, con un livello di privacy in più rispetto ad Android stock."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Perché solo Google Pixel?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "GrapheneOS supporta esclusivamente i Pixel perché sono gli unici dispositivi con i requisiti hardware di sicurezza necessari (secure element, verified boot con chiavi proprie) e anni di aggiornamenti garantiti."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come avviene l'acquisto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Solo via Telegram, scrivendo a @turtlecute33. Si parte da una consulenza gratuita per scegliere modello e setup, poi il telefono viene preparato su misura e spedito con tracciamento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Cosa è incluso nel prezzo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tutto: consulenza nella scelta del dispositivo, analisi delle esigenze, setup di privacy e sicurezza su misura (con eventualmente VPN, Tor o altri strumenti), video di spiegazione delle configurazioni e spedizione tracciata."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Self-hosted fonts (privacy: no requests to Google) -->
+    <link rel="preload" href="fonts/inter-latin-UcC73FwrK3.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/space-grotesk-latin-V8mQoQDjQS.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+
+        /* A11y: skip link */
+        .skip{
+            position:absolute;top:-40px;left:0;
+            background:#c53030;color:#fff;
+            padding:10px 18px;z-index:100;
+            text-decoration:none;
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.78rem;font-weight:500;
+            letter-spacing:.05em;
+            transition:top .2s ease;
+        }
+        .skip:focus{top:0;outline:none}
+
+        /* A11y: focus-visible */
+        a:focus-visible,
+        button:focus-visible,
+        summary:focus-visible{
+            outline:2px solid #c53030;
+            outline-offset:3px;
+            border-radius:6px;
+        }
+        details summary:focus-visible{outline-offset:-2px}
+
+        /* A11y: reduced motion */
+        @media (prefers-reduced-motion: reduce){
+            *,*::before,*::after{
+                animation-duration:.01ms !important;
+                animation-iteration-count:1 !important;
+                transition-duration:.01ms !important;
+                scroll-behavior:auto !important;
+            }
+        }
+
+        :root{
+            --bg:#0a0a0a;
+            --fg:#ededec;
+            --border:#2a2a28;
+            --accent:#c53030;
+            --muted:#9c9a93;
+            --muted2:#6e6d68;
+            --card:#131312;
+            --r:10px;
+            --r-sm:6px;
+            --ease:cubic-bezier(.25,.46,.45,.94);
+            --brutal:'Archivo Black',system-ui,sans-serif;
+        }
+
+        body{
+            font-family:'Inter',system-ui,-apple-system,sans-serif;
+            background:var(--bg);
+            color:var(--fg);
+            line-height:1.7;
+            font-size:15px;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+        }
+
+        /* top accent bar */
+        body::before{
+            content:'';display:block;
+            height:3px;
+            background:var(--accent);
+        }
+
+        /* ═══ LAYOUT ═══ */
+        .w{max-width:1060px;margin:0 auto;padding:0 36px}
+
+        /* ═══ BREADCRUMB ═══ */
+        .crumb{
+            padding:32px 0 0;
+            animation:enter .6s var(--ease) both;
+        }
+        .crumb a{
+            display:inline-flex;align-items:center;gap:8px;
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.72rem;font-weight:500;
+            letter-spacing:.06em;
+            color:var(--muted2);text-decoration:none;
+            transition:color .25s var(--ease);
+        }
+        .crumb a:hover{color:var(--fg)}
+        .crumb svg{
+            width:14px;height:14px;
+            stroke:currentColor;fill:none;stroke-width:2;
+            stroke-linecap:round;stroke-linejoin:round;
+            transition:transform .3s var(--ease);
+        }
+        .crumb a:hover svg{transform:translateX(-3px)}
+
+        /* ═══ HERO ═══ */
+        .hero{padding:88px 0 69px}
+        .hero h1{
+            font-family:'Space Grotesk',system-ui,sans-serif;
+            font-size:clamp(2.4rem,6.5vw,4.6rem);
+            font-weight:700;
+            line-height:1;
+            letter-spacing:-0.01em;
+            margin-bottom:32px;
+            max-width:820px;
+            text-transform:uppercase;
+        }
+        .hero h1 .hl{
+            background:var(--fg);
+            color:var(--bg);
+            padding:0.02em 0.18em;
+            border-radius:4px;
+            display:inline-block;
+            margin-top:0.15em;
+        }
+        .hero-p{
+            font-size:1.05rem;
+            color:var(--muted);
+            max-width:540px;
+            line-height:1.8;
+            font-weight:400;
+        }
+        .hero h1,.hero-p,.hero-cta{animation:enter .6s var(--ease) both}
+        .hero h1{animation-delay:.05s}
+        .hero-p{animation-delay:.18s}
+        .hero-cta{animation-delay:.3s}
+
+        .hero-cta{
+            display:inline-flex;align-items:center;gap:10px;
+            margin-top:36px;
+            padding:16px 38px;
+            background:var(--fg);color:var(--bg);
+            border-radius:var(--r-sm);
+            font-family:'Inter',system-ui,sans-serif;
+            font-size:.9rem;font-weight:700;
+            text-decoration:none;letter-spacing:-.01em;
+            border:1px solid var(--fg);
+            transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+        }
+        .hero-cta:hover{
+            transform:translateY(-2px);
+            box-shadow:0 6px 20px rgba(237,237,236,.12);
+        }
+        .hero-cta svg{
+            width:18px;height:18px;stroke:currentColor;
+            fill:none;stroke-width:2;
+            stroke-linecap:round;stroke-linejoin:round;
+            transition:transform .3s var(--ease);
+        }
+        .hero-cta:hover svg{transform:translateX(3px)}
+
+        @keyframes enter{
+            from{opacity:0;transform:translateY(22px)}
+            to{opacity:1;transform:none}
+        }
+
+        /* ═══ SECTION HEAD ═══ */
+        .section-title{
+            font-family:'Space Grotesk',system-ui,sans-serif;
+            font-size:1.2rem;font-weight:700;
+            text-transform:uppercase;
+            letter-spacing:.02em;margin-bottom:8px;
+        }
+        .sec-head{margin-bottom:32px}
+
+        /* ═══ HIGHLIGHTS (threat-strip style) ═══ */
+        .points{padding:0}
+        .point-strip{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+        }
+        .point-pill{
+            padding:34px 32px;
+            border-right:1px solid var(--border);
+            transition:background .25s var(--ease);
+        }
+        .point-pill:last-child{border-right:none}
+        .point-pill:hover{background:rgba(255,255,255,.015)}
+        .point-pill h2{
+            font-family:var(--brutal);
+            font-size:1rem;
+            font-weight:400;
+            letter-spacing:-.02em;
+            margin-bottom:10px;
+        }
+        .point-pill p{
+            font-size:.9rem;
+            color:var(--muted);
+            line-height:1.7;
+        }
+
+        /* ═══ PRICING ═══ */
+        .pricing{padding:69px 0 0}
+        .price-table{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:var(--r);
+            overflow:hidden;
+        }
+        .price-row{
+            display:flex;align-items:center;
+            justify-content:space-between;gap:16px;
+            padding:24px 32px;
+            border-bottom:1px solid var(--border);
+            text-decoration:none;color:inherit;
+            transition:background .25s var(--ease);
+        }
+        .price-row:last-child{border-bottom:none}
+        .price-row:hover{background:#181817}
+        .pr-model{
+            font-family:var(--brutal);
+            font-size:.95rem;font-weight:400;
+            text-transform:uppercase;
+        }
+        .pr-note{
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.62rem;font-weight:500;
+            text-transform:uppercase;letter-spacing:.08em;
+            color:var(--muted2);
+            padding:4px 10px;
+            border:1px solid var(--border);
+            border-radius:var(--r-sm);
+            margin-left:12px;
+            white-space:nowrap;
+        }
+        .pr-price{
+            font-family:'Space Grotesk',system-ui,sans-serif;
+            font-size:1.3rem;font-weight:700;
+            white-space:nowrap;
+        }
+        .price-foot{
+            margin-top:14px;
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.7rem;color:var(--muted2);
+            letter-spacing:.04em;
+        }
+
+        /* ═══ INCLUDED ═══ */
+        .included{padding:69px 0 0}
+        .inc-grid{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:1px;
+            background:var(--border);
+            border:1px solid var(--border);
+            border-radius:var(--r);
+            overflow:hidden;
+        }
+        .inc{
+            background:var(--card);
+            padding:26px 30px;
+            display:flex;gap:16px;align-items:flex-start;
+            transition:background .25s var(--ease);
+        }
+        .inc:hover{background:#181817}
+        .inc svg{
+            width:18px;height:18px;flex-shrink:0;
+            stroke:var(--fg);fill:none;stroke-width:1.5;
+            stroke-linecap:round;stroke-linejoin:round;
+            margin-top:3px;
+        }
+        .inc h3{
+            font-size:.9rem;font-weight:600;
+            margin-bottom:4px;
+        }
+        .inc p{
+            font-size:.85rem;color:var(--muted);
+            line-height:1.65;
+        }
+
+        /* ═══ HOW IT WORKS ═══ */
+        .how{padding:69px 0 0}
+        .steps{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:16px;
+        }
+        .step{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:var(--r);
+            padding:32px;
+            transition:border-color .3s var(--ease),transform .3s var(--ease);
+        }
+        .step:hover{border-color:#484846;transform:translateY(-3px)}
+        .step-n{
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.7rem;font-weight:500;
+            color:var(--muted2);
+            letter-spacing:.1em;
+            display:block;margin-bottom:18px;
+        }
+        .step h3{
+            font-family:var(--brutal);
+            font-size:.95rem;font-weight:400;
+            text-transform:uppercase;
+            margin-bottom:10px;
+        }
+        .step p{
+            font-size:.88rem;color:var(--muted);
+            line-height:1.7;
+        }
+
+        /* ═══ FAQ ═══ */
+        .faq{padding:69px 0 0}
+        .faq-item{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:var(--r);
+            margin-bottom:8px;
+            transition:border-color .3s var(--ease);
+        }
+        .faq-item:hover{border-color:#484846}
+        .faq-item summary{
+            padding:22px 28px;
+            font-size:.95rem;
+            font-weight:600;
+            cursor:pointer;
+            list-style:none;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .faq-item summary::-webkit-details-marker{display:none}
+        .faq-item summary::after{
+            content:'+';
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:1.1rem;
+            color:var(--muted2);
+            transition:transform .3s var(--ease);
+        }
+        .faq-item[open] summary::after{content:'−'}
+        .faq-item p{
+            padding:0 28px 20px;
+            font-size:.9rem;
+            color:var(--muted);
+            line-height:1.75;
+        }
+        .faq-item p:first-of-type{padding-top:0}
+
+        /* ═══ CTA ═══ */
+        .cta{padding:69px 0 24px}
+        .cta-box{
+            position:relative;overflow:hidden;
+            border:1px solid var(--border);
+            border-radius:16px;
+            background:linear-gradient(180deg,#151514,#0e0e0d);
+            padding:56px 60px;
+            display:flex;align-items:center;
+            justify-content:space-between;gap:48px;
+        }
+        .cta-box::before{
+            content:'';position:absolute;inset:0;
+            background:radial-gradient(520px 240px at 10% -10%,rgba(197,48,48,.13),transparent 70%);
+            pointer-events:none;
+        }
+        .cta-left{position:relative;max-width:480px}
+        .cta-eyebrow{
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.65rem;font-weight:500;
+            text-transform:uppercase;letter-spacing:.14em;
+            color:var(--muted2);
+            display:block;margin-bottom:16px;
+        }
+        .cta-box h2{
+            font-family:'Space Grotesk',system-ui,sans-serif;
+            font-size:clamp(1.5rem,2.8vw,2.1rem);
+            font-weight:700;
+            text-transform:uppercase;
+            letter-spacing:-.01em;line-height:1.12;
+            margin-bottom:14px;
+        }
+        .cta-box p{
+            font-size:.93rem;color:var(--muted);
+            line-height:1.75;
+        }
+        .cta-right{
+            position:relative;flex-shrink:0;
+            display:flex;flex-direction:column;
+            align-items:flex-start;gap:16px;
+        }
+        .cta-btn{
+            display:inline-flex;align-items:center;gap:10px;
+            padding:16px 32px;
+            background:var(--fg);color:var(--bg);
+            border-radius:999px;
+            font-family:'Inter',system-ui,sans-serif;
+            font-size:.9rem;font-weight:700;
+            text-decoration:none;letter-spacing:-.01em;
+            border:1px solid var(--fg);
+            transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+        }
+        .cta-btn:hover{
+            transform:translateY(-2px);
+            box-shadow:0 6px 24px rgba(237,237,236,.16);
+        }
+        .cta-btn:active{transform:translateY(0);box-shadow:none}
+        .cta-btn svg{
+            width:18px;height:18px;
+            fill:currentColor;
+            transition:transform .3s var(--ease);
+        }
+        .cta-btn:hover svg{transform:translateX(3px)}
+
+        /* ═══ FOOTER ═══ */
+        footer{padding:0 0 24px}
+        .foot-inner{
+            display:flex;align-items:center;
+            justify-content:space-between;
+            padding:12px 0;
+        }
+        .foot-brand{
+            display:flex;align-items:center;gap:10px;
+            text-decoration:none;color:inherit;
+        }
+        .foot-dot{
+            width:8px;height:8px;
+            border-radius:50%;
+            background:var(--accent);
+        }
+        .foot-brand span{
+            font-family:'JetBrains Mono',ui-monospace,monospace;
+            font-size:.72rem;color:var(--muted2);
+        }
+        .foot-brand span a{
+            color:var(--muted);text-decoration:none;
+            border-bottom:1px solid var(--muted2);
+            transition:color .25s var(--ease),border-color .25s var(--ease);
+        }
+        .foot-brand span a:hover{color:var(--fg);border-bottom-color:transparent}
+        .foot-socials{display:flex;gap:2px}
+        .foot-socials a{
+            width:38px;height:38px;
+            border-radius:var(--r-sm);
+            display:flex;align-items:center;justify-content:center;
+            color:var(--muted2);text-decoration:none;
+            transition:color .25s var(--ease),background .25s var(--ease);
+        }
+        .foot-socials a:hover{color:var(--fg);background:rgba(255,255,255,.05)}
+        .foot-socials svg{width:16px;height:16px}
+        /* mail icon is stroke-based: compensate optical size vs filled icons */
+        .foot-socials a[href^="mailto"] svg{width:18px;height:18px}
+
+        /* ═══ STICKY CTA MOBILE ═══ */
+        .sticky-cta{
+            position:fixed;
+            left:16px;right:16px;bottom:16px;
+            z-index:90;
+            display:none;
+            align-items:center;justify-content:center;gap:10px;
+            padding:14px 22px;
+            background:var(--fg);color:var(--bg);
+            border-radius:var(--r-sm);
+            font-family:'Inter',system-ui,sans-serif;
+            font-size:.85rem;font-weight:700;
+            letter-spacing:-.01em;
+            text-decoration:none;
+            box-shadow:0 6px 24px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);
+            transform:translateY(120%);opacity:0;
+            transition:transform .35s var(--ease),opacity .35s var(--ease);
+        }
+        .sticky-cta.visible{transform:translateY(0);opacity:1}
+        .sticky-cta svg{width:16px;height:16px;fill:currentColor}
+        @media(max-width:768px){
+            .sticky-cta{display:flex}
+        }
+
+        /* ═══ SCROLL REVEAL ═══ */
+        .sr{
+            opacity:0;
+            transform:translateY(16px);
+            transition:opacity .55s var(--ease),transform .55s var(--ease);
+        }
+        .sr.v{opacity:1;transform:none}
+        .sr-stagger>*{
+            opacity:0;
+            transform:translateY(12px);
+            transition:opacity .45s var(--ease),transform .45s var(--ease);
+        }
+        .sr-stagger.v>*:nth-child(1){opacity:1;transform:none;transition-delay:.05s}
+        .sr-stagger.v>*:nth-child(2){opacity:1;transform:none;transition-delay:.1s}
+        .sr-stagger.v>*:nth-child(3){opacity:1;transform:none;transition-delay:.16s}
+        .sr-stagger.v>*:nth-child(4){opacity:1;transform:none;transition-delay:.22s}
+
+        /* ═══ RESPONSIVE ═══ */
+        @media(max-width:768px){
+            .w{padding:0 24px}
+            .hero{padding:64px 0 60px}
+            .hero h1{font-size:clamp(2rem,8.5vw,3rem)}
+            .point-strip{grid-template-columns:1fr}
+            .point-pill{
+                border-right:none;
+                border-bottom:1px solid var(--border);
+                padding:32px 0;
+            }
+            .point-pill:last-child{border-bottom:none}
+            .price-row{flex-wrap:wrap;padding:20px 22px}
+            .pr-note{margin-left:0}
+            .inc-grid{grid-template-columns:1fr}
+            .steps{grid-template-columns:1fr}
+            .cta-box{
+                flex-direction:column;
+                align-items:flex-start;
+                gap:32px;
+                padding:44px 28px;
+            }
+            .foot-inner{
+                flex-direction:column;gap:16px;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#contatto" class="skip">Vai al contenuto</a>
+
+<main class="w">
+
+    <!-- BREADCRUMB -->
+    <nav class="crumb" aria-label="Breadcrumb">
+        <a href="/"><svg viewBox="0 0 24 24"><path d="M7 16l-4-4m0 0l4-4m-4 4h18"/></svg>Tutte le soluzioni</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Un telefono che <span class="hl">non ti spia</span></h1>
+        <p class="hero-p">Google Pixel con GrapheneOS al posto di Android: stessa usabilità, setup su misura, e i servizi Google girano in sandbox con un livello di privacy in più. Pronto all'uso appena lo accendi.</p>
+        <a href="https://t.me/Turtlecute33" class="hero-cta" data-umami-event="Phone Hero CTA" target="_blank" rel="noopener">
+            Scrivimi su Telegram
+            <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+    </section>
+
+    <!-- WHY -->
+    <section class="points sr">
+        <div class="point-strip">
+            <div class="point-pill">
+                <h2>Google in sandbox</h2>
+                <p>I Google Play Services restano disponibili, ma isolati dal sistema grazie al sandboxing di GrapheneOS: usi le app che conosci con un alto livello di privacy.</p>
+            </div>
+            <div class="point-pill">
+                <h2>Resiste alla forense</h2>
+                <p>GrapheneOS è l'unico sistema operativo mobile che resiste agli strumenti di estrazione forense delle agenzie specializzate: i dati sul telefono restano accessibili solo a te.</p>
+            </div>
+            <div class="point-pill">
+                <h2>Usabilità normale</h2>
+                <p>Si usa come un Android qualsiasi: stesse app, stessa fluidità. In base alle tue esigenze preparo un setup su misura, con VPN, Tor o altri strumenti dove servono.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing">
+        <div class="sec-head sr"><h2 class="section-title">Modelli e prezzi</h2></div>
+        <div class="price-table sr-stagger">
+            <div class="price-row">
+                <span class="pr-model">Pixel 9a <span class="pr-note">Entry consigliato</span></span>
+                <span class="pr-price">€650</span>
+            </div>
+            <div class="price-row">
+                <span class="pr-model">Pixel 10a</span>
+                <span class="pr-price">€800</span>
+            </div>
+            <div class="price-row">
+                <span class="pr-model">Pixel 10</span>
+                <span class="pr-price">€950</span>
+            </div>
+            <div class="price-row">
+                <span class="pr-model">Pixel 10 Pro XL</span>
+                <span class="pr-price">€1400</span>
+            </div>
+        </div>
+        <p class="price-foot sr">Prezzo finale, tutto incluso. Se non sai quale scegliere, lo decidiamo insieme.</p>
+    </section>
+
+    <!-- INCLUDED -->
+    <section class="included">
+        <div class="sec-head sr"><h2 class="section-title">Sempre incluso nel prezzo</h2></div>
+        <div class="inc-grid sr-stagger">
+            <div class="inc">
+                <svg viewBox="0 0 24 24"><path d="M8 10h8m-8 4h4m9-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <div>
+                    <h3>Consulenza sulla scelta</h3>
+                    <p>Parliamo su Telegram delle tue esigenze e decidiamo insieme il modello e il setup più adatti a te.</p>
+                </div>
+            </div>
+            <div class="inc">
+                <svg viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <div>
+                    <h3>Setup personalizzato</h3>
+                    <p>Configuro il telefono in base alle tue esigenze, con VPN, Tor o altri strumenti dove servono. Lo ricevi già pronto.</p>
+                </div>
+            </div>
+            <div class="inc">
+                <svg viewBox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <div>
+                    <h3>Video di spiegazione</h3>
+                    <p>Registro un video che spiega le modifiche fatte al tuo telefono e come usare ogni configurazione.</p>
+                </div>
+            </div>
+            <div class="inc">
+                <svg viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                <div>
+                    <h3>Spedizione tracciata</h3>
+                    <p>Spedizione tracciata gratuita in tutta Italia, anche ai locker per chi preferisce non usare l'indirizzo di casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how">
+        <div class="sec-head sr"><h2 class="section-title">Come funziona</h2></div>
+        <div class="steps sr-stagger">
+            <div class="step">
+                <span class="step-n">01</span>
+                <h3>Mi scrivi</h3>
+                <p>Mi contatti su Telegram. Non c'è un carrello: preparo ogni telefono su misura, quindi si parte da una chiacchierata.</p>
+            </div>
+            <div class="step">
+                <span class="step-n">02</span>
+                <h3>Definiamo il setup</h3>
+                <p>Analizziamo le tue esigenze e scegliamo modello, app e configurazioni di privacy. Tu decidi quanto spingerti.</p>
+            </div>
+            <div class="step">
+                <span class="step-n">03</span>
+                <h3>Ricevi tutto pronto</h3>
+                <p>Preparo il telefono, registro il video di spiegazione e te lo spedisco con tracciamento. Lo accendi ed è già tuo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="sec-head sr"><h2 class="section-title">Domande frequenti</h2></div>
+        <div class="sr">
+            <details class="faq-item">
+                <summary>Posso usare le app di tutti i giorni?</summary>
+                <p>Sì. GrapheneOS ha la stessa usabilità di un Android normale ed è compatibile con il <strong>99,99% delle app</strong>, incluse quelle bancarie italiane: le eccezioni sono poche mosche bianche. Puoi installare anche i Google Play Services: su GrapheneOS girano in <strong>sandbox</strong>, come app normali, quindi li usi con layer di privacy in più rispetto a un Android stock.</p>
+                <p>Per scrupolo puoi controllare la <a href="https://privsec.dev/posts/android/banking-applications-compatibility-with-grapheneos/" target="_blank" rel="noopener" style="color:var(--fg)">lista aggiornata di compatibilità delle app bancarie</a> mantenuta dalla community.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Perché solo Google Pixel?</summary>
+                <p>GrapheneOS supporta solo i Pixel perché sono gli unici dispositivi con i requisiti hardware necessari: secure element dedicato, verified boot con chiavi proprie e anni di aggiornamenti di sicurezza garantiti.</p>
+            </details>
+            <details class="faq-item">
+                <summary>E se ho già un Pixel?</summary>
+                <p>Scrivimi comunque: possiamo valutare l'installazione e la configurazione di GrapheneOS sul tuo dispositivo, se è tra i modelli supportati.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contatto">
+        <div class="cta-box sr">
+            <div class="cta-left">
+                <span class="cta-eyebrow">Telegram · @turtlecute33</span>
+                <h2>Si parte da un messaggio</h2>
+                <p>Mi scrivi, parliamo delle tue esigenze e ti preparo il telefono su misura. La consulenza è inclusa nel prezzo.</p>
+            </div>
+            <div class="cta-right">
+                <a href="https://t.me/Turtlecute33" class="cta-btn" data-umami-event="Phone CTA Finale" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    Scrivimi su Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="foot-inner">
+            <div class="foot-brand">
+                <div class="foot-dot"></div>
+                <span>Made with 🔐 by <a href="https://x.com/turtlecute33">@turtlecute33</a></span>
+            </div>
+            <div class="foot-socials">
+                <a href="https://x.com/turtlecute33" aria-label="Profilo X (Twitter) di turtlecute33" title="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="https://t.me/Turtlecute33" aria-label="Canale Telegram di turtlecute33" title="Telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                <a href="https://instagram.com/turtlecute33" aria-label="Profilo Instagram di turtlecute33" title="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+                <a href="mailto:turtlecute@proton.me" aria-label="Email a turtlecute@proton.me" title="Email" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+</main>
+
+<a href="https://t.me/Turtlecute33" class="sticky-cta" data-umami-event="Phone Sticky CTA mobile" target="_blank" rel="noopener" aria-label="Scrivimi su Telegram">
+    Scrivimi su Telegram
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(e=>{
+    e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})
+},{threshold:.12});
+document.querySelectorAll('.sr,.sr-stagger').forEach(el=>io.observe(el));
+
+// Sticky CTA: visibile dopo l'hero, nascosto quando il CTA finale è in vista
+(()=>{
+    const sticky=document.querySelector('.sticky-cta');
+    const hero=document.querySelector('.hero');
+    const blocker=document.querySelector('.cta-box');
+    if(!sticky||!hero) return;
+    let heroOut=false,blockerIn=false;
+    const update=()=>sticky.classList.toggle('visible',heroOut&&!blockerIn);
+    new IntersectionObserver(en=>{heroOut=!en[0].isIntersecting;update()},{threshold:0}).observe(hero);
+    if(blocker) new IntersectionObserver(en=>{blockerIn=en[0].isIntersecting;update()},{threshold:.4}).observe(blocker);
+})();
+</script>
+
+</body>
+</html>

@@ -308,7 +308,7 @@
                         "price": "650.00",
                         "priceCurrency": "EUR",
                         "availability": "https://schema.org/InStock",
-                        "url": "https://t.me/privacyphoneitalia/13"
+                        "url": "https://shop.priorato.org/privacy-phone"
                     }
                 }
             }
@@ -995,6 +995,8 @@
         }
         .foot-socials a:hover{color:var(--fg);background:rgba(255,255,255,.05)}
         .foot-socials svg{width:16px;height:16px}
+        /* mail icon is stroke-based: compensate optical size vs filled icons */
+        .foot-socials a[href^="mailto"] svg{width:18px;height:18px}
 
         /* ═══ STICKY CTA MOBILE ═══ */
         .sticky-cta{
@@ -1156,7 +1158,7 @@
                     <span class="go">Ottieni ora <svg viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
                 </a>
 
-                <a data-umami-event="Telefoni" href="https://t.me/privacyphoneitalia/13" class="card" target="_blank" rel="noopener">
+                <a data-umami-event="Telefoni" href="/privacy-phone" class="card">
                     <span class="pill">Su misura</span>
                     <div class="card-ico">
                         <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
