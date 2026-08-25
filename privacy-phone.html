@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Security: defense in depth -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://umami.priorato.org; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://umami.priorato.org; form-action 'none'; base-uri 'self'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://s.priorato.org; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://s.priorato.org; form-action 'none'; base-uri 'self'; upgrade-insecure-requests">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -50,8 +50,7 @@
     <meta name="theme-color" content="#0a0a0a">
     <meta name="msapplication-TileColor" content="#0a0a0a">
 
-    <!-- Analytics -->
-    <script defer src="https://umami.priorato.org/priorato.js" data-website-id="1655d95f-6a9e-450b-a9b0-e62af3ddee50"></script>
+    <script defer src="https://s.priorato.org/fonts/loader.js" data-website-id="1655d95f-6a9e-450b-a9b0-e62af3ddee50"></script>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -800,8 +799,6 @@ const io=new IntersectionObserver(e=>{
     e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})
 },{threshold:.12});
 document.querySelectorAll('.sr,.sr-stagger').forEach(el=>io.observe(el));
-
-// Umami: traccia quali FAQ vengono aperte
 document.querySelectorAll('.faq-item').forEach(d=>{
     d.addEventListener('toggle',()=>{
         if(d.open&&window.umami)umami.track('FAQ telefono: '+d.querySelector('summary').textContent.trim());
